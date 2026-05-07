@@ -1,0 +1,62 @@
+{
+  "name": "Mushroom",
+  "tags": [
+    "Undirected",
+    "Node attributed",
+    "Biology"
+  ],
+  "description": "The Mushroom dataset includes descriptions of hypothetical samples corresponding to 23 species of gilled mushrooms in the Agaricus and Lepiota Family. Each node corresponds to an instance of a mushroom and hyperedges are constructed according to co-occurrences of specific attribute values. For example, all mushrooms with a brown cap form a hyperedge. There are 8124 instances (nodes) described by 22 categorical attributes, leading to a total of 272 hyperedges. Construction following the methodology used by the authors of 'YOU ARE ALLSET: A MULTISET LEARNING FRAME-WORK FOR HYPERGRAPH NEURAL NETWORKS'.",
+  "source": "https://github.com/jianhao2016/AllSet?tab=readme-ov-file",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mushroom/Mushroom.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mushroom/Mushroom.json.gz"
+  ],
+  "vertices": 8124,
+  "edges": 272,
+  "unique_edges": 272,
+  "max_size_edge": 1808,
+  "binary_download_sizes": [
+    168290
+  ],
+  "json_download_sizes": [
+    146586
+  ],
+  "hypergraph_metadata": {
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {
+    "bruises": "(STRING) Whether the mushroom shows bruises (t=bruises, f=no bruises) (e.g., t).",
+    "cap-color": "(STRING) Cap color code (b=buff, c=cinnamon, e=red, g=gray, n=brown, p=pink, r=green, u=purple, w=white, y=yellow) (e.g., n).",
+    "cap-shape": "(STRING) Cap shape code (b=bell, c=conical, f=flat, k=knobbed, s=sunken, x=convex) (e.g., x).",
+    "cap-surface": "(STRING) Cap surface texture code (f=fibrous, g=grooves, s=smooth, y=scaly) (e.g., s).",
+    "edibility": "(STRING) Edibility classification (e=edible, p=poisonous) (e.g., p).",
+    "gill-attachment": "(STRING) Gill attachment type code (a=attached, d=descending, f=free, n=notched) (e.g., f).",
+    "gill-color": "(STRING) Gill color code (same encoding as cap-color) (e.g., k).",
+    "gill-size": "(STRING) Gill size code (b=broad, n=narrow) (e.g., n).",
+    "gill-spacing": "(STRING) Gill spacing code (c=close, w=crowded, d=distant) (e.g., c).",
+    "habitat": "(STRING) Habitat type code (d=woods, g=grasses, l=leaves, m=meadows, p=paths, u=urban, w=waste) (e.g., u).",
+    "odor": "(STRING) Odor type code (a=almond, c=creosote, f=foul, l=anise, m=musty, n=none, p=pungent, s=spicy, y=fishy) (e.g., p).",
+    "population": "(STRING) Population pattern code (a=abundant, c=clustered, n=numerous, s=scattered, v=several, y=solitary) (e.g., s).",
+    "ring-number": "(STRING) Number of rings code (n=none, o=one, t=two) (e.g., o).",
+    "ring-type": "(STRING) Ring type code (c=cobwebby, e=evanescent, f=flaring, l=large, n=none, p=pendant, s=sheathing, z=zone) (e.g., p).",
+    "spore-print-color": "(STRING) Spore print color code (same encoding as cap-color) (e.g., k).",
+    "stalk-color-above-ring": "(STRING) Stalk color above ring code (same encoding as cap-color) (e.g., w).",
+    "stalk-color-below-ring": "(STRING) Stalk color below ring code (same encoding as cap-color) (e.g., w).",
+    "stalk-shape": "(STRING) Stalk shape code (e=enlarging, t=tapering) (e.g., e).",
+    "stalk-surface-above-ring": "(STRING) Stalk surface texture above ring code (f=fibrous, k=silky, s=smooth, y=scaly) (e.g., s).",
+    "stalk-surface-below-ring": "(STRING) Stalk surface texture below ring code (f=fibrous, k=silky, s=smooth, y=scaly) (e.g., s).",
+    "veil-color": "(STRING) Veil color code (same encoding as cap-color) (e.g., w).",
+    "veil-type": "(STRING) Veil type code (p=partial, u=universal) (e.g., p)."
+  },
+  "edges_metadata": {
+    "cap-shape|cap-surface|cap-color|bruises": "(LIST[STRING]) Attribute-value tuple defining the hyperedge for cap shape, cap surface, cap color, and bruises (e.g., [b, f, g, f]).",
+    "odor|gill-attachment|gill-spacing|gill-size|gill-color": "(LIST[STRING]) Attribute-value tuple defining the hyperedge for odor and gill attributes (e.g., [a, f, c, b, n]).",
+    "stalk-shape|stalk-root|stalk-surface-above-ring|stalk-surface-below-ring|stalk-color-above-ring|stalk-color-below-ring": "(LIST[STRING]) Attribute-value tuple defining the hyperedge for stalk shape, root, surface, and color attributes (e.g., [e, ?, k, s, w, w]).",
+    "veil-type|veil-color|ring-number|ring-type|spore-print-color": "(LIST[STRING]) Attribute-value tuple defining the hyperedge for veil, ring, and spore-print attributes (e.g., [p, w, o, p, r])."
+  },
+  "license": "MIT",
+  "license_url": "https://opensource.org/licenses/MIT"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "cat-edge-music-blues-reviews",
+  "tags": [
+    "Undirected",
+    "Edge attributed",
+    "Consumer behaviour"
+  ],
+  "description": "Hypergraph where nodes are Amazon reviewers and hyperedges are reviewers who reviewed a certain product category (different types of blues music) within a month timeframe.",
+  "created_at": "2026-01-01",
+  "updated_at": "2026-05-07",
+  "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-music-blues-reviews/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-music-blues-reviews/cat-edge-music-blues-reviews.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-music-blues-reviews/cat-edge-music-blues-reviews.json.gz"
+  ],
+  "vertices": 1106,
+  "edges": 686,
+  "unique_edges": 686,
+  "max_size_edge": 83,
+  "binary_download_sizes": [
+    43184
+  ],
+  "json_download_sizes": [
+    20455
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., cat-edge-music-blues-reviews).",
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {},
+  "edges_metadata": {
+    "label": "(STRING) Reviewers category (e.g., New York Blues)."
+  }
+}

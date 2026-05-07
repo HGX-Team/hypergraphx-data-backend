@@ -1,0 +1,41 @@
+{
+  "name": "cat-edge-DAWN",
+  "tags": [
+    "Undirected",
+    "Edge attributed",
+    "Biology"
+  ],
+  "description": "In this dataset, nodes are drugs and hyperedges are combinations of drugs taken by a patient prior to an emergency room visit. Hyperedge categories indicate the most common patient disposition for that drug combination.",
+  "created_at": "2026-01-01",
+  "updated_at": "2026-05-07",
+  "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-DAWN/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-DAWN/cat-edge-DAWN.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-DAWN/cat-edge-DAWN.json.gz"
+  ],
+  "vertices": 2109,
+  "edges": 87104,
+  "unique_edges": 87104,
+  "max_size_edge": 22,
+  "binary_download_sizes": [
+    2250139
+  ],
+  "json_download_sizes": [
+    773172
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., cat-edge-DAWN).",
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {
+    "name": "(STRING) Drug name with numeric code prefix (e.g., 182 CROMOLYN)."
+  },
+  "edges_metadata": {
+    "label": "(STRING) Patient disposition category for the drug-combination hyperedge (e.g., DISCHARGED HOME).",
+    "label_id": "(INT) Source disposition category identifier, from 1 to 10 (e.g., 1)."
+  }
+}

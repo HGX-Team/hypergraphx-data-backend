@@ -1,0 +1,69 @@
+{
+  "name": "pokemon-moves-dual",
+  "tags": [
+    "Undirected",
+    "Biology",
+    "Games"
+  ],
+  "description": "Dual of the move learnset dataset. Nodes are moves and each hyperedge represents one Pok\u00e9mon, containing the moves that Pok\u00e9mon can learn in at least one version group by at least one learn method.",
+  "created_at": "2026-05-07",
+  "updated_at": "2026-05-07",
+  "source": "https://pokeapi.co/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-dual/pokemon-moves-dual.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-dual/pokemon-moves-dual.json.gz"
+  ],
+  "vertices": 833,
+  "edges": 1194,
+  "unique_edges": 1194,
+  "max_size_edge": 375,
+  "binary_download_sizes": [
+    221241
+  ],
+  "json_download_sizes": [
+    153888
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., pokemon-moves-dual).",
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false).",
+    "node_type": "(STRING) Semantic type of nodes (e.g., move).",
+    "edge_type": "(STRING) Semantic type of hyperedges (e.g., pokemon)."
+  },
+  "nodes_metadata": {
+    "move_id": "(INT) Pok\u00e9API move identifier (e.g., 85).",
+    "name": "(STRING) Move name (e.g., thunderbolt).",
+    "type": "(STRING) Move type (e.g., electric).",
+    "damage_class": "(STRING) Damage class of the move (e.g., special).",
+    "power": "(INT) Move power when defined (e.g., 90).",
+    "accuracy": "(INT) Move accuracy when defined (e.g., 100).",
+    "pp": "(INT) Base power points for the move (e.g., 15).",
+    "generation": "(STRING) Generation where the move was introduced (e.g., generation-i)."
+  },
+  "edges_metadata": {
+    "pokemon_id": "(INT) Pok\u00e9API Pok\u00e9mon identifier (e.g., 25).",
+    "name": "(STRING) Pok\u00e9mon name (e.g., pikachu).",
+    "species": "(STRING) Pok\u00e9mon species name (e.g., pikachu).",
+    "generation": "(STRING) Generation where the Pok\u00e9mon species was introduced (e.g., generation-i).",
+    "is_default": "(BOOL) Whether this is the default Pok\u00e9mon form (e.g., true).",
+    "primary_type": "(STRING) Primary Pok\u00e9mon type (e.g., electric).",
+    "secondary_type": "(STRING) Secondary Pok\u00e9mon type when present (e.g., flying).",
+    "height": "(INT) Height in Pok\u00e9API decimetre units (e.g., 4).",
+    "weight": "(INT) Weight in Pok\u00e9API hectogram units (e.g., 60).",
+    "base_hp": "(INT) Base HP stat (e.g., 35).",
+    "base_attack": "(INT) Base attack stat (e.g., 55).",
+    "base_defense": "(INT) Base defense stat (e.g., 40).",
+    "base_sp_attack": "(INT) Base special attack stat (e.g., 50).",
+    "base_sp_defense": "(INT) Base special defense stat (e.g., 50).",
+    "base_speed": "(INT) Base speed stat (e.g., 90).",
+    "version_groups": "(list of STRINGs) Version groups represented in the Pok\u00e9mon learnset edge (e.g., [red-blue]).",
+    "learn_methods": "(list of STRINGs) Learn methods represented in the Pok\u00e9mon learnset edge (e.g., [machine]).",
+    "min_level": "(INT) Minimum nonzero learn level observed for the Pok\u00e9mon edge (e.g., 7)."
+  },
+  "license": "BSD-3-Clause",
+  "license_url": "https://github.com/PokeAPI/pokeapi/blob/master/LICENSE.md",
+  "license_note": "Data derived from Pok\u00e9API. Pok\u00e9mon and Pok\u00e9mon character names are trademarks of Nintendo. Pok\u00e9API is not affiliated with Nintendo, Game Freak, or Creatures."
+}

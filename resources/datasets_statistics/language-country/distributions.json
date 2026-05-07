@@ -1,0 +1,1 @@
+{"version":1,"hyperedge_size":{"bins":[1,2,3,4,5,8,20,25,31,77],"labels":["1","2","3","4","5","8\u20139","20\u201324","25\u201330","31\u201338","77"],"frequencies":[82,11,8,2,1,1,1,1,1,1]},"hyperdegree":{"bins":[1,2],"labels":["1","2"],"frequencies":[155,79]},"time":{"x":[],"y":[],"start":[],"end":[],"is_epoch":false,"bucket_seconds":0,"granularity":"unit"}}

@@ -1,0 +1,33 @@
+{
+  "name": "whiskyfun",
+  "tags": [
+    "Undirected"
+  ],
+  "description": "The data is collected from the Whiskyfun website's listings of distillery flavour profiles. Nodes are flavour descriptors, and hyperedges are distilleries containing the set of descriptors associated with them.",
+  "source": "",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/whiskyfun/whiskyfun.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/whiskyfun/whiskyfun.json.gz"
+  ],
+  "vertices": 208,
+  "edges": 117,
+  "unique_edges": 117,
+  "max_size_edge": 36,
+  "binary_download_sizes": [
+    8697
+  ],
+  "json_download_sizes": [
+    4816
+  ],
+  "hypergraph_metadata": {
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {},
+  "edges_metadata": {
+    "name": "(STRING) Name of the whisky distillery (e.g., Aberfeldy Single Malt Scotch Whisky).",
+    "region": "(STRING) Scotch whisky production region (e.g., highlands)."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "congress-bills",
+  "tags": [
+    "Undirected",
+    "Temporal",
+    "Social"
+  ],
+  "description": "Nodes represent legislators. Each hyperedge represents a bill and contains the set of legislators associated with that bill (e.g., sponsor and cosponsor lists).",
+  "source": "https://www.cs.cornell.edu/~arb/data/congress-bills/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/congress-bills/congress-bills.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/congress-bills/congress-bills.json.gz"
+  ],
+  "vertices": 1718,
+  "edges": 282049,
+  "unique_edges": 105733,
+  "max_size_edge": 400,
+  "binary_download_sizes": [
+    9731581
+  ],
+  "json_download_sizes": [
+    3536381
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., congress-bills).",
+    "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., true)."
+  },
+  "nodes_metadata": {
+    "name": "(STRING) Legislator name with state and district (e.g., Dayton, Mark [MN])."
+  },
+  "edges_metadata": {
+    "original_timestamp": "(INT) Bill original time (e.g., 720261).",
+    "time": "(INT) Bill time (e.g., 615).",
+    "weight": "(INT) Bill weight (e.g., 6)."
+  }
+}

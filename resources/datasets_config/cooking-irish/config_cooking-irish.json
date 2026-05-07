@@ -1,0 +1,35 @@
+{
+  "name": "cooking-irish",
+  "tags": [
+    "Undirected",
+    "Food"
+  ],
+  "description": "Recipe hypergraph from Irish cuisine (Ireland). Nodes represent ingredients. Each hyperedge represents a recipe and contains the set of ingredients used in that recipe.",
+  "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-irish/cooking-irish.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-irish/cooking-irish.json.gz"
+  ],
+  "vertices": 999,
+  "edges": 662,
+  "unique_edges": 662,
+  "max_size_edge": 27,
+  "binary_download_sizes": [
+    39586
+  ],
+  "json_download_sizes": [
+    21321
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., cooking-irish).",
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {
+    "name": "(STRING) Name of the food ingredient (e.g., cooking spray)."
+  },
+  "edges_metadata": {}
+}

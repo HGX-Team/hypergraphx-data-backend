@@ -1,0 +1,45 @@
+{
+  "name": "Marvel",
+  "tags": [
+    "Undirected"
+  ],
+  "description": "A hypergraph representing comic book characters as nodes and the comic books they co-appear in as hyperedges. This dataset combines information from the DC-MARVEL Comic Characters Dataset and the Marvel Universe Social Network Dataset to create a comprehensive representation of character interactions within the Marvel universe. Not all characters have complete information.",
+  "source": "GigaSheet: DC-MARVEL Comic Characters Dataset (https://www.gigasheet.com/sample-data/dc-marvel-comic-characters) and Marvel Universe Social Network Dataset (https://www.kaggle.com/datasets/csanhueza/the-marvel-universe-social-network?resource=download&select=edges.csv)",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Marvel/Marvel.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Marvel/Marvel.json.gz"
+  ],
+  "vertices": 6439,
+  "edges": 10222,
+  "unique_edges": 10222,
+  "max_size_edge": 111,
+  "binary_download_sizes": [
+    482796
+  ],
+  "json_download_sizes": [
+    414870
+  ],
+  "hypergraph_metadata": {
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {
+    "Alignment": "(STRING) Character moral alignment (e.g., Good).",
+    "Alive": "(STRING) Whether the character is currently alive (e.g., Yes).",
+    "Appearances": "(INT) Number of comic book appearances (e.g., 146).",
+    "Eyes": "(STRING) Eye color of the character (e.g., Red).",
+    "FirstAppearance": "(STRING) Date of first comic book appearance (year, month; e.g., 1977, July).",
+    "Hair": "(STRING) Hair color of the character (e.g., Black).",
+    "Identity": "(STRING) Public or secret identity status of the character (e.g., Known to Authorities).",
+    "Planet": "(STRING) Planet or universe of origin (e.g., Earth-616).",
+    "Sex": "(STRING) Sex or gender category recorded for the character (e.g., Male).",
+    "Universe": "(STRING) Comic book universe (publisher; e.g., Marvel)."
+  },
+  "edges_metadata": {
+    "comic": "(STRING) Comic issue or publication code represented by the hyperedge (e.g., MM 12)."
+  },
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/"
+}

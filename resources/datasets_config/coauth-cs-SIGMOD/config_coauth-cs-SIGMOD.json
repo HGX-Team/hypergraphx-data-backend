@@ -1,0 +1,34 @@
+{
+  "name": "coauth-cs-SIGMOD",
+  "tags": [
+    "Undirected",
+    "Social",
+    "Authorship"
+  ],
+  "description": "This dataset is a subset of the Microsoft Academic Graph in which nodes represent authors and hyperedges correspond to their publications in SIGMOD (a top-tier computer science conference). Papers with more than 25 authors were omitted. Note that this dataset is derived from cat-edge-MAG-10; consequently, some publications may be missing when the same set of authors published at multiple conferences in that source. In such cases, the most frequent venue of a given hyperedge was used as the interaction category, and ties were discarded.",
+  "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-MAG-10/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-SIGMOD/coauth-cs-SIGMOD.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-SIGMOD/coauth-cs-SIGMOD.json.gz"
+  ],
+  "vertices": 8755,
+  "edges": 4291,
+  "unique_edges": 4291,
+  "max_size_edge": 21,
+  "binary_download_sizes": [
+    159650
+  ],
+  "json_download_sizes": [
+    74154
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., coauth-cs-SIGMOD).",
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {},
+  "edges_metadata": {}
+}

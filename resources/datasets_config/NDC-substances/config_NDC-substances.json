@@ -1,0 +1,42 @@
+{
+  "name": "NDC-substances",
+  "tags": [
+    "Undirected",
+    "Temporal",
+    "Weighted",
+    "Biology"
+  ],
+  "description": "Nodes represent chemical substances. Each hyperedge represents a drug (identified by its NDC code) and contains the set of substances that make up that drug. This is a temporal higher-order network dataset from the National Drug Code (NDC) Directory, maintained by the U.S. Food and Drug Administration under the Drug Listing Act of 1972.",
+  "source": "https://www.cs.cornell.edu/~arb/data/NDC-substances/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-substances/NDC-substances.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-substances/NDC-substances.json.gz"
+  ],
+  "vertices": 5556,
+  "edges": 112919,
+  "unique_edges": 10273,
+  "max_size_edge": 187,
+  "binary_download_sizes": [
+    2989431
+  ],
+  "json_download_sizes": [
+    1860019
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., NDC-substances).",
+    "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., true)."
+  },
+  "nodes_metadata": {
+    "substance_name": "(STRING) Chemical or active ingredient name (e.g., florbetapir f-18)."
+  },
+  "edges_metadata": {
+    "label": "(LIST[STRING]) Drug product labels and NDC codes represented by the hyperedge (e.g., [amyvid (0002-1200)]).",
+    "original_timestamp": "(INT) Original drug listing timestamp before temporal normalization (e.g., 63474192000000).",
+    "time": "(INT) Normalized drug listing timestamp used by the temporal hypergraph (e.g., 3547497600000).",
+    "weight": "(INT) Number of drug product labels collapsed into this hyperedge (e.g., 1)."
+  }
+}

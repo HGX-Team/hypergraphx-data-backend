@@ -1,0 +1,40 @@
+{
+  "name": "email-Enron",
+  "tags": [
+    "Directed",
+    "Temporal",
+    "Social",
+    "Technology"
+  ],
+  "description": "Nodes represent email addresses. Each hyperedge represents an email message, connecting the sender with all recipients (and may include a timestamp/weight when available). This dataset contains the emails from the Enron Email Dataset.",
+  "source": "https://www.cs.cmu.edu/~enron/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/email-Enron/email-Enron.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/email-Enron/email-Enron.json.gz"
+  ],
+  "vertices": 84172,
+  "edges": 235395,
+  "unique_edges": 111558,
+  "max_size_edge": 892,
+  "binary_download_sizes": [
+    9936128
+  ],
+  "json_download_sizes": [
+    4319311
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., email-Enron).",
+    "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {
+    "address": "(STRING) Email address represented by the node (e.g., fran.fagan@enron.com)."
+  },
+  "edges_metadata": {
+    "ccs": "(LIST[INT]) Carbon-copy recipient node identifiers for the email message; may be empty (e.g., [1, 8]).",
+    "time": "(INT) Unix timestamp of the email message (e.g., 1000501543)."
+  }
+}

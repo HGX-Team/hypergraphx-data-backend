@@ -1,0 +1,38 @@
+{
+  "name": "house-committees",
+  "tags": [
+    "Undirected",
+    "Social"
+  ],
+  "description": "Nodes represent legislators. Each hyperedge represents a committee and contains the set of legislators serving on that committee.",
+  "source": "https://www.cs.cornell.edu/~arb/data/house-committees/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-committees/house-committees.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-committees/house-committees.json.gz"
+  ],
+  "vertices": 1290,
+  "edges": 341,
+  "unique_edges": 336,
+  "max_size_edge": 82,
+  "binary_download_sizes": [
+    46197
+  ],
+  "json_download_sizes": [
+    28892
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., house-committees).",
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., true)."
+  },
+  "nodes_metadata": {
+    "label": "(STRING) Political party affiliation (e.g., Democrat).",
+    "name": "(STRING) Name of the legislator represented by the node (e.g., E. de la Garza)."
+  },
+  "edges_metadata": {
+    "weight": "(INT) Number of committee instances collapsed into this legislator-set hyperedge (e.g., 1)."
+  }
+}

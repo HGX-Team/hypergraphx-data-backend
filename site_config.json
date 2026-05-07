@@ -1,0 +1,6 @@
+{
+  "github_repo_url_base": "https://github.com/HGX-Team/hypergraphx-data",
+  "recent_dataset_days": 90,
+  "recent_dataset_limit": 5,
+  "recent_dataset_overrides": []
+}

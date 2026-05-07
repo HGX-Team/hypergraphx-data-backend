@@ -1,0 +1,38 @@
+{
+  "name": "senate-bills",
+  "tags": [
+    "Undirected",
+    "Social"
+  ],
+  "description": "Nodes represent legislators. Each hyperedge represents a bill and contains the set of legislators associated with that bill (e.g., sponsor and cosponsor lists).",
+  "source": "https://www.cs.cornell.edu/~arb/data/senate-bills/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/senate-bills/senate-bills.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/senate-bills/senate-bills.json.gz"
+  ],
+  "vertices": 294,
+  "edges": 29157,
+  "unique_edges": 21721,
+  "max_size_edge": 99,
+  "binary_download_sizes": [
+    763048
+  ],
+  "json_download_sizes": [
+    223517
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., senate-bills).",
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., true)."
+  },
+  "nodes_metadata": {
+    "label": "(STRING) Political party affiliation (e.g., Democrat).",
+    "name": "(STRING) Name of the legislator represented by the node (e.g., MCCLELLAN)."
+  },
+  "edges_metadata": {
+    "weight": "(INT) Number of times this bill sponsor configuration appeared (e.g., 2)."
+  }
+}

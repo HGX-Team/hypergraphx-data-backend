@@ -1,0 +1,38 @@
+{
+  "name": "house-bills",
+  "tags": [
+    "Undirected",
+    "Social"
+  ],
+  "description": "Nodes represent legislators. Each hyperedge represents a bill and contains the set of legislators associated with that bill (e.g., sponsor and cosponsor lists).",
+  "source": "https://www.cs.cornell.edu/~arb/data/house-bills/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-bills/house-bills.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-bills/house-bills.json.gz"
+  ],
+  "vertices": 1494,
+  "edges": 60987,
+  "unique_edges": 54933,
+  "max_size_edge": 399,
+  "binary_download_sizes": [
+    3990429
+  ],
+  "json_download_sizes": [
+    1460540
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., house-bills).",
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., true)."
+  },
+  "nodes_metadata": {
+    "label": "(STRING) Political party affiliation (e.g., Democrat).",
+    "name": "(STRING) Legislator name with state and district (e.g., MOSS)."
+  },
+  "edges_metadata": {
+    "weight": "(INT) Number of bills collapsed into this legislator-set hyperedge (e.g., 7)."
+  }
+}

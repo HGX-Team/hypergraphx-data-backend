@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypergraphx-data</title>
+    <meta name="description" content="A curated catalog of higher-order network (hypergraph) datasets with metadata, download links, and reproducibility resources.">
+    <meta property="og:title" content="Hypergraphx-data">
+    <meta property="og:description" content="A curated catalog of higher-order network (hypergraph) datasets with metadata, download links, and reproducibility resources.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="static/images/logo_cropped-removedbg.png">
+    <link rel="icon" type="image/png" href="static/images/logo_cropped-removedbg.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Code highlight -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <style>
+    /* Ensure the highlighter doesn't overwrite your dark container */
+    .hljs { background: transparent !important; color: inherit; }
+    /* Optional: make inline code match too */
+    pre code.hljs, pre.hljs { background: transparent !important; }
+    </style>
+</head>
+<body>
+    <!-- Bootstrap Navbar (Header) with Burger Menu -->
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="static/images/logo_cropped-removedbg-whitegraph.png" alt="HGX Logo" width="30" height="30" class="d-inline-block align-text-center">
+                Hypergraphx-data
+            </a>
+            
+            <!-- Burger Icon for Collapsing Menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html"><i class="fa-solid fa-database"></i> Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fa-solid fa-address-card"></i> About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-muted dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-link"></i> Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="https://github.com/HGX-Team/hypergraphx/tree/main/tutorials" target="_blank" rel="noopener noreferrer">Tutorials <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></li>
+                            <li><a class="dropdown-item" href="https://github.com/pszufe/HIF-standard" target="_blank" rel="noopener noreferrer">HIF <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></li>
+                            <li><a class="dropdown-item" href="https://github.com/HGX-Team/hypergraphx" target="_blank" rel="noopener noreferrer">GitHub <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></li>
+                            <li><a class="dropdown-item" href="https://hypergraphx.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">Docs <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main id="mainContent">
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="hero-kicker">Hypergraphx-data</span>
+                    <h1 class="hero-title">A curated catalog of higher-order network datasets.</h1>
+                    <p class="hero-subtitle">
+                        Explore hypergraph datasets with clear metadata, consistent formats, and ready-to-use downloads.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-dark" href="#catalog"><i class="fa-solid fa-table-list" aria-hidden="true"></i> Browse datasets</a>
+                        <a class="btn btn-outline-secondary" href="#snippets"><i class="fa-solid fa-code" aria-hidden="true"></i> Snippets</a>
+                        <a class="btn btn-outline-secondary" href="https://github.com/HGX-Team/hypergraphx/tree/main/tutorials" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Notebook tutorial</a>
+                        <a class="btn btn-outline-secondary" href="https://doi.org/10.1093/comnet/cnad019" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Read the paper</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="hero-logo">
+                        <img src="static/images/logo.png" alt="Hypergraphx-data logo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recently-added" class="recently-added-section">
+        <div class="container">
+            <div class="recently-added my-4">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                    <h3 class="mb-0">Recently added or updated</h3>
+                    <span class="text-muted small">Curated highlights from the latest dataset changes.</span>
+                </div>
+                {{recently_added}}
+            </div>
+        </div>
+    </section>
+
+    <section id="easy-access" class="recently-added-section">
+        <div class="container">
+            <div class="recently-added my-4">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                    <h3 class="mb-0">Easy access</h3>
+                    <div class="easy-access-meta">
+                        <span class="text-muted small">5 random datasets grouped by size (based on <strong>E</strong> in the catalog).</span>
+                        <span class="easy-access-legend" aria-label="Size legend">
+                            <span><span class="badge bg-secondary">S</span> small</span>
+                            <span><span class="badge bg-primary">M</span> medium</span>
+                            <span><span class="badge bg-dark">L</span> large</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="recently-added-grid horizontal-card-row" id="easyAccessRow"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="catalog-section">
+        <div class="container">
+            <div class="row g-4">
+	                <aside class="col-lg-3 catalog-sidebar">
+	                    <div class="sticky-panel">
+	                        <div class="filters-header">
+	                            <h2 class="section-title">Filters</h2>
+	                            <span class="filter-count" id="filterCount" aria-live="polite">0 active</span>
+	                        </div>
+			                        <div class="filter-section text-center">
+			                            <div class="filter-group">
+			                                <label class="filter-label" for="searchInput">Search</label>
+			                                <input type="search" id="searchInput" class="form-control form-control-sm"
+			                                    placeholder="Search datasets or tags"
+			                                    autocomplete="off"
+			                                    list="datasetSuggestions"
+			                                    aria-label="Search datasets or tags">
+			                                <datalist id="datasetSuggestions"></datalist>
+			                            </div>
+			                            <div class="filter-group">
+			                                <div class="filter-label">Tag matching</div>
+			                                <div class="form-check form-switch">
+			                                    <input class="form-check-input" type="checkbox" role="switch" id="tagMatchMode">
+			                                    <label class="form-check-label" for="tagMatchMode" id="tagMatchModeLabel">Within group: AND</label>
+		                                </div>
+		                                <div class="text-muted small">Across groups is always AND.</div>
+		                            </div>
+		                            <div class="filter-group">
+		                                <div class="filter-label">Network Type</div>
+		                                <div class="filter-row">
+		                                    <button class="tag" data-tag="Directed" data-group="type" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-arrow-right"></i></span>Directed</button>
+		                                    <button class="tag" data-tag="Weighted" data-group="type" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-hashtag"></i></span>Weighted</button>
+		                                    <button class="tag" data-tag="Temporal" data-group="type" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-clock"></i></span>Temporal</button>
+		                                    <button class="tag" data-tag="Multiplex" data-group="type" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-layer-group"></i></span>Multiplex</button>
+		                                    <button class="tag" data-tag="Node attributed" data-group="type" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-tags"></i></span>Node attributed</button>
+		                                    <button class="tag" data-tag="Edge attributed" data-group="type" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-tag"></i></span>Edge attributed</button>
+		                                </div>
+		                            </div>
+
+		                            <div class="filter-group">
+		                                <div class="filter-label">Domain</div>
+		                                <div class="filter-row">
+		                                    <button class="tag" data-tag="Biology" data-group="domain" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-dna"></i></span>Biology</button>
+		                                    <button class="tag" data-tag="Social" data-group="domain" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-users"></i></span>Social</button>
+		                                    <button class="tag" data-tag="Authorship" data-group="domain" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-pen-nib"></i></span>Authorship</button>
+		                                    <button class="tag" data-tag="Technology" data-group="domain" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-microchip"></i></span>Technology</button>
+		                                    <button class="tag" data-tag="Finance" data-group="domain" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-coins"></i></span>Finance</button>
+		                                    <button class="tag" data-tag="Food" data-group="domain" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-utensils"></i></span>Food</button>
+		                                    <button class="tag tag-span" data-tag="Other" data-group="domain" aria-pressed="false"><span class="tag-icon"><i class="fa-solid fa-ellipsis"></i></span>Other</button>
+		                                </div>
+		                            </div>
+
+			                            <div class="filter-group">
+			                                <div class="filter-label">Size</div>
+			                                <div class="size-hint text-muted small">Drag sliders to set min/max ranges.</div>
+			                                <div class="size-grid mb-3">
+		                                    <div class="size-control">
+		                                        <label for="minNodes">Nodes from</label>
+		                                        <input type="range" id="minNodes" min="0" max="0" step="1" class="form-range">
+		                                        <span id="minNodesLabel" class="highlight-label">0</span>
+		                                    </div>
+		                                    <div class="size-control">
+		                                        <label for="maxNodes">Nodes to</label>
+		                                        <input type="range" id="maxNodes" min="0" max="0" step="1" class="form-range">
+		                                        <span id="maxNodesLabel" class="highlight-label">0</span>
+		                                    </div>
+			                                    <div class="size-control">
+			                                        <label class="size-control-label--small" for="minEdges">Hyperedges from</label>
+			                                        <input type="range" id="minEdges" min="0" max="0" step="1" class="form-range">
+			                                        <span id="minEdgesLabel" class="highlight-label">0</span>
+			                                    </div>
+			                                    <div class="size-control">
+			                                        <label class="size-control-label--small" for="maxEdges">Hyperedges to</label>
+			                                        <input type="range" id="maxEdges" min="0" max="0" step="1" class="form-range">
+			                                        <span id="maxEdgesLabel" class="highlight-label">0</span>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <div class="filter-group">
+				                                <div class="filter-label"><i class="fa-solid fa-scale-balanced me-1"></i>License</div>
+				                                <div class="filter-row" id="licenseFilters"></div>
+				                            </div>
+	                            <button class="filter-clear-link" id="clearFiltersBtn" type="button">
+	                                <i class="fa-solid fa-rotate-left"></i>Clear filters
+	                            </button>
+	                        </div>
+
+                    </div>
+                </aside>
+
+                <div class="col-lg-9 catalog-main">
+                    <div class="catalog-panel">
+	                        <div class="meta-strip">
+	                            <div class="meta-item">
+	                                <div class="meta-label">Total datasets</div>
+	                                <div class="meta-value" id="metaTotal" aria-live="polite">0</div>
+	                            </div>
+	                            <div class="meta-item">
+	                                <div class="meta-label">Showing</div>
+	                                <div class="meta-value" id="metaShown" aria-live="polite">0</div>
+	                            </div>
+	                            <div class="meta-item">
+	                                <div class="meta-label">Last updated</div>
+	                                <div class="meta-value" id="metaUpdated" aria-live="polite">--</div>
+	                            </div>
+	                            <div class="filter-summary" id="filterSummary">
+	                                <span class="filter-chip">All datasets</span>
+	                            </div>
+	                        </div>
+
+                        <h2 class="text-center mt-4">Datasets</h2>
+                        <div class="table-legend text-muted small text-center">
+                            <span><strong>V</strong> = vertices (nodes)</span>
+                            <span class="legend-dot">·</span>
+                            <span><strong>E</strong> = hyperedges</span>
+                            <span class="legend-dot">·</span>
+                            <span><strong>E<sub>unique</sub></strong> = unique hyperedges</span>
+                        </div>
+
+	                        <div id="datasetTableWrap">
+	                            <table class="table" id="datasetsTable">
+                                <thead>
+                                    <tr>
+                                        <th>Dataset Name</th>
+                                        <th>Tags</th>
+	                                        <th>V</th>
+	                                        <th>E</th>
+	                                        <th>E<sub>unique</sub></th>
+	                                    </tr>
+	                                </thead>
+                                <tbody>
+                                    {{table_rows}}
+                                </tbody>
+                            </table>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+
+    <section id="snippets" class="quick-band">
+        <div class="container">
+            <div class="band-header">
+                <div>
+                    <h2>Quick ways to load datasets</h2>
+                    <p class="text-muted">Minimal snippets to get data into your workflow.</p>
+                </div>
+            </div>
+            <div class="quick-band-grid">
+                <div class="quick-card">
+                    <div class="quick-title">
+                        <i class="fa-solid fa-download me-2"></i>Download & read
+                    </div>
+                    <pre class="bg-dark text-light p-3 rounded overflow-auto mb-2 mt-0" id="tip-download"><code class="language-python">from hypergraphx.readwrite import load_hypergraph
+H = load_hypergraph("DATASET_PATH")</code></pre>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="copySnippet('tip-download', this)">
+                        <i class="fa-regular fa-copy me-1"></i>Copy
+                    </button>
+                    <div class="small text-muted mt-2">Replace <code>DATASET_PATH</code> with the file path.</div>
+                </div>
+                <div class="quick-card">
+                    <div class="quick-title">
+                        <i class="fab fa-github me-2"></i>Dataset loader
+                    </div>
+                    <pre class="bg-dark text-light p-3 rounded overflow-auto mb-2 mt-0" id="tip-hgx"><code class="language-python">from hypergraphx.readwrite import load_hypergraph_from_server
+H = load_hypergraph_from_server("DATASET_NAME")</code></pre>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="copySnippet('tip-hgx', this)">
+                        <i class="fa-regular fa-copy me-1"></i>Copy
+                    </button>
+                    <div class="small text-muted mt-2">Replace <code>DATASET_NAME</code> with a dataset identifier.</div>
+                </div>
+                <div class="quick-card">
+                    <div class="quick-title">
+                        <i class="fa fa-down-left-and-up-right-to-center me-2"></i>HIF
+                    </div>
+                    <pre class="bg-dark text-light p-3 rounded overflow-auto mb-2 mt-0" id="tip-hif"><code class="language-python">from hypergraphx.readwrite import write_hif
+write_hif(H, "DATASET_NAME.hif.json")</code></pre>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="copySnippet('tip-hif', this)">
+                        <i class="fa-regular fa-copy me-1"></i>Copy
+                    </button>
+                    <div class="small text-muted mt-2">Replace <code>DATASET_NAME.hif.json</code> with the file path.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="report-section">
+        <div class="container my-5">
+            <h2 class="text-center mb-0">Have something to report?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="text-center p-4">
+                        <p class="mb-4 text-muted">
+                            Found a bug, attribution issue, or have a feature request?
+                            Open an issue on our GitHub repository and we’ll take a look.
+                        </p>
+                        <a href="{{repo_issues_url}}"
+                           class="btn btn-github btn-lg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <svg class="btn-github-icon" viewBox="0 0 16 16" aria-hidden="true">
+                                <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38
+                                  0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                                  -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                                  0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 4 0c1.53-1.04 2.2-.82
+                                  2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                                  0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+                            </svg>
+                            <span>Report on GitHub</span>
+                        </a>
+                        <p class="mt-3 mb-0 small text-muted">
+                            Prefer email? Contact us at
+                            <a href="mailto:lotitoq@ceu.edu">lotitoq@ceu.edu</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Footer -->
+	    <footer class="footer-custom bg-dark text-white py-3">
+	        <div class="container text-center">
+	            <div>Hypergraphx-data: a repository of higher-order network datasets · © <span id="footerYear">2026</span></div>
+	        </div>
+	    </footer>
+    <script>
+        const footerYear = document.getElementById('footerYear');
+        if (footerYear) footerYear.textContent = new Date().getFullYear();
+	    </script>
+
+	    <!-- Bootstrap JS (Optional) -->
+	    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	    <!-- jQuery -->
+	    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	    <!-- DataTables JS -->
+	    <script defer src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+	    <!-- Code highlight -->
+	    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+	    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+	    <!-- Link to the external JS file -->
+	    <script defer src="static/js/script.js"></script>
+
+		    <script>
+		        document.addEventListener('DOMContentLoaded', function () {
+		            if (window.hljs && typeof window.hljs.highlightAll === 'function') {
+		                window.hljs.highlightAll();
+		            }
+		        });
+		    </script>
+
+    <script>
+        function copySnippet(preId, btn) {
+            const el = document.getElementById(preId);
+            const text = el ? el.innerText : "";
+            if (!text) return;
+            const original = btn.innerHTML;
+
+            const updateCopied = () => {
+                btn.innerHTML = '<i class="fa-solid fa-check me-1"></i>Copied';
+                setTimeout(() => btn.innerHTML = original, 1200);
+            };
+
+            const fallbackCopy = () => {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'absolute';
+                ta.style.left = '-9999px';
+                document.body.appendChild(ta);
+                ta.select();
+                ta.setSelectionRange(0, ta.value.length);
+                try {
+                    document.execCommand('copy');
+                    updateCopied();
+                } finally {
+                    ta.remove();
+                }
+            };
+
+            if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+                navigator.clipboard.writeText(text).then(updateCopied).catch(fallbackCopy);
+            } else {
+                fallbackCopy();
+            }
+        }
+    </script>
+
+</body>
+</html>

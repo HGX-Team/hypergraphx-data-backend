@@ -1,0 +1,41 @@
+{
+  "name": "coauth-DBLP",
+  "tags": [
+    "Undirected",
+    "Temporal",
+    "Social",
+    "Authorship"
+  ],
+  "description": "Nodes represent authors. Each hyperedge represents a publication and contains the set of co-authors of that publication. This is a temporal higher-order network dataset, where each hyperedge is a publication recorded on DBLP. Timestamps are the year of publication.",
+  "source": "https://www.cs.cornell.edu/~arb/data/coauth-DBLP/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-DBLP/coauth-DBLP.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-DBLP/coauth-DBLP.json.gz"
+  ],
+  "vertices": 1930378,
+  "edges": 3700681,
+  "unique_edges": 2467396,
+  "max_size_edge": 280,
+  "binary_download_sizes": [
+    121251017
+  ],
+  "json_download_sizes": [
+    60936556
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., coauth-DBLP).",
+    "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., true)."
+  },
+  "nodes_metadata": {
+    "author": "(STRING) Name of the DBLP author represented by the node (e.g., E. F. Codd)."
+  },
+  "edges_metadata": {
+    "original_timestamp": "(INT) Original publication year (e.g., 1974).",
+    "time": "(INT) Normalized publication year used by the temporal hypergraph (e.g., 38).",
+    "weight": "(INT) Number of publications collapsed into this author-set/year hyperedge (e.g., 5)."
+  }
+}

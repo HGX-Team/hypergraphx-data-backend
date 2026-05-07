@@ -1,0 +1,33 @@
+{
+  "name": "walmart-trips",
+  "tags": [
+    "Undirected",
+    "Consumer behaviour"
+  ],
+  "description": "Hypergraph of Walmart shopping trips. Nodes represent products and each hyperedge represents a trip (basket) containing the set of co-purchased products, as released as part of a Kaggle competition. Products are assigned to one of ten broad departments on walmart.com (e.g., 'Clothing, Shoes, and Accessories'), which serve as node labels (with an additional 'Other' class).",
+  "source": "https://www.cs.cornell.edu/~arb/data/walmart-trips/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/walmart-trips/walmart-trips.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/walmart-trips/walmart-trips.json.gz"
+  ],
+  "vertices": 88860,
+  "edges": 65979,
+  "unique_edges": 65979,
+  "max_size_edge": 25,
+  "binary_download_sizes": [
+    3186956
+  ],
+  "json_download_sizes": [
+    1522661
+  ],
+  "hypergraph_metadata": {
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {
+    "label": "(LIST[STRING]) Product department category (e.g., [Food, Household & Pets])."
+  },
+  "edges_metadata": {}
+}

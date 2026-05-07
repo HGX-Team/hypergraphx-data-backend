@@ -1,0 +1,46 @@
+{
+  "name": "DAWN",
+  "tags": [
+    "Undirected",
+    "Temporal",
+    "Weighted",
+    "Biology"
+  ],
+  "description": "The Drug Abuse Warning Network (DAWN) temporal higher-order network. Nodes are drugs, and each timestamped hyperedge is the set of drugs reported by a patient during an emergency department visit. Timestamps are recorded at quarter-year resolution from 2004 to 2011.",
+  "created_at": "2026-05-07",
+  "updated_at": "2026-05-07",
+  "source": "https://www.cs.cornell.edu/~arb/data/DAWN/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/DAWN/DAWN.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/DAWN/DAWN.json.gz"
+  ],
+  "vertices": 2558,
+  "edges": 2272433,
+  "unique_edges": 141087,
+  "max_size_edge": 16,
+  "binary_download_sizes": [
+    6895635
+  ],
+  "json_download_sizes": [
+    2413525
+  ],
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., DAWN).",
+    "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., true)."
+  },
+  "nodes_metadata": {
+    "drug_code": "(STRING) Source drug code (e.g., D00001).",
+    "drug_name": "(STRING) Drug name (e.g., ACYCLOVIR)."
+  },
+  "edges_metadata": {
+    "original_timestamp": "(INT) Quarter-year timestamp encoded as year * 4 + quarter (e.g., 8017).",
+    "year": "(INT) Calendar year of the emergency department visit (e.g., 2004).",
+    "quarter": "(INT) Calendar quarter of the emergency department visit, from 1 to 4 (e.g., 1).",
+    "time": "(INT) Normalized quarter-year timestamp used by the temporal hypergraph (e.g., 0).",
+    "weight": "(INT) Number of identical visits collapsed into this timestamped hyperedge (e.g., 1)."
+  }
+}

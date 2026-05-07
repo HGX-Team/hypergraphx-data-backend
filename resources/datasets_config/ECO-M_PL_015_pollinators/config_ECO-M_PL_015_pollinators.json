@@ -1,0 +1,36 @@
+{
+  "name": "ECO-M_PL_015_pollinators",
+  "tags": [
+    "Biology",
+    "Undirected"
+  ],
+  "description": "Nodes represent pollinator species. Each hyperedge represents a plant species and contains the set of pollinators visiting that plant (projection of a plant–pollinator bipartite network). This dataset contains the relationships between plants and pollinators from the 'Web of Life' project.",
+  "source": "https://www.web-of-life.es/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ECO-M_PL_015_pollinators/ECO-M_PL_015_pollinators.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ECO-M_PL_015_pollinators/ECO-M_PL_015_pollinators.json.gz"
+  ],
+  "vertices": 666,
+  "edges": 129,
+  "unique_edges": 129,
+  "max_size_edge": 124,
+  "binary_download_sizes": [
+    22068
+  ],
+  "json_download_sizes": [
+    15917
+  ],
+  "hypergraph_metadata": {
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {
+    "name": "(STRING) Scientific name of the pollinator species (e.g., Apis mellifera).",
+    "original_node_id": "(INT) Original node identifier from the source dataset (e.g., 7)."
+  },
+  "edges_metadata": {
+    "name": "(STRING) Scientific name of the plant species visited (e.g., Erodium cicutarium)."
+  }
+}

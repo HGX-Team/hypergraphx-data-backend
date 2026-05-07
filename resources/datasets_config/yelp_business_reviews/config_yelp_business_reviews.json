@@ -1,0 +1,39 @@
+{
+  "name": "yelp_business_reviews",
+  "tags": [
+    "Undirected"
+  ],
+  "description": "Yelp business reviews information where nodes correspond to businesses with meta-attributes such as business stars and location (latitude and longitude). Hyperedges correspond to users and contain the set of businesses reviewed by that user. The source listed here contains the raw data from which this hypergraph dataset is constructed. An alternative source would be 'https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset'.",
+  "source": "https://github.com/jianhao2016/AllSet/tree/6281a2f1a91f6f26040777bb0b2578fc035dc57a/data/raw_data",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/yelp_business_reviews/yelp_business_reviews.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/yelp_business_reviews/yelp_business_reviews.json.gz"
+  ],
+  "vertices": 50758,
+  "edges": 667542,
+  "unique_edges": 667542,
+  "max_size_edge": 2838,
+  "binary_download_sizes": [
+    33128522
+  ],
+  "json_download_sizes": [
+    16239980
+  ],
+  "hypergraph_metadata": {
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {
+    "business_stars": "(INT) Business star rating (scaled, typically 1-10; e.g., 8).",
+    "lat": "(STRING) Business location latitude. Stored as a string in JSON; can be converted to float (e.g., 40.0175444).",
+    "long": "(STRING) Business location longitude. Stored as a string in JSON; can be converted to float (e.g., -105.2833481).",
+    "name": "(STRING) Name of the Yelp business represented by the node (e.g., Oskar Blues Taproom)."
+  },
+  "edges_metadata": {
+    "edge_id": "(INT) Original hyperedge identifier for the reviewing user (e.g., 1)."
+  },
+  "license": "MIT",
+  "license_url": "https://opensource.org/licenses/MIT"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "contacts-high-school",
+  "tags": [
+    "Undirected",
+    "Temporal",
+    "Social"
+  ],
+  "description": "This dataset corresponds to the contacts and friendship relations between students in a high school in Marseilles, France, in December 2013. Nodes represent individuals. Original data are pairwise contacts; hyperedges are constructed by promoting cliques of contacts into higher-order group interactions.",
+  "source": "http://www.sociopatterns.org/datasets/high-school-contact-and-friendship-networks/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-high-school/contacts-high-school.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-high-school/contacts-high-school.json.gz"
+  ],
+  "edges": 172035,
+  "unique_edges": 7818,
+  "vertices": 327,
+  "nodes_metadata": {
+    "id": "(INT) Unique identifier for the student (e.g., 454).",
+    "class": "(STRING) Student class identifier (e.g., 2BIO1, 2BIO2, MP, MP*1).",
+    "sex": "(STRING) Student sex (M=male, F=female, Unknown) (e.g., F).",
+    "has_facebook": "(BOOL) Whether the student has a Facebook account (e.g., true).",
+    "facebook_friends": "(LIST[INT]) List of student IDs who are Facebook friends (e.g., [34, 151, 156]).",
+    "has_compiled_questionnaire": "(BOOL) Whether the student completed the friendship questionnaire (e.g., false).",
+    "questionnaire_friends": "(LIST[INT]) List of student IDs reported as friends in the questionnaire (e.g., [205, 272, 494])."
+  },
+  "edges_metadata": {
+    "time": "(INT) Normalized timestamp (seconds from first contact) (e.g., 0).",
+    "original_time": "(INT) Unix timestamp of the contact event (e.g., 1385982020)."
+  },
+  "max_size_edge": 5,
+  "binary_download_sizes": [
+    2773595
+  ],
+  "json_download_sizes": [
+    794913
+  ],
+  "hypergraph_metadata": {
+    "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "license": "CC-BY-NC-SA-3.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "amazon-reviews",
+  "tags": [
+    "Undirected",
+    "Consumer behaviour"
+  ],
+  "description": "Hypergraph built from Amazon product reviews (specifically, the collection of 5-core datasets). Nodes represent products and each hyperedge represents the set of products reviewed by a user. Nodes are labeled by product category.",
+  "source": "https://www.cs.cornell.edu/~arb/data/amazon-reviews/",
+  "binary_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/amazon-reviews/amazon-reviews.hgx.gz"
+  ],
+  "json_download": [
+    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/amazon-reviews/amazon-reviews.json.gz"
+  ],
+  "vertices": 2268231,
+  "edges": 4242421,
+  "unique_edges": 4242421,
+  "max_size_edge": 9350,
+  "binary_download_sizes": [
+    541414821
+  ],
+  "json_download_sizes": [
+    281350133
+  ],
+  "hypergraph_metadata": {
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
+  },
+  "nodes_metadata": {
+    "label": "(LIST[STRING]) Product category label (e.g., [Clothing_Shoes_and_Jewelry])."
+  },
+  "edges_metadata": {}
+}
