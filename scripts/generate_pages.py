@@ -623,6 +623,16 @@ def _distribution_js(dataset_dir: str) -> tuple[str, str, str]:
 
     return hyperedge_js, degree_js, time_js
 
+def _dataset_bibtex_text(dataset):
+    bibtex = _as_str(dataset.get("bibtex")).strip()
+    if bibtex:
+        return bibtex
+
+    source = _as_str(dataset.get("source")).strip()
+    if source:
+        return f"No BibTeX entry is currently available. Please refer to the original source: {source}"
+    return "No BibTeX entry is currently available. Please refer to the original data source listed in the provenance section."
+
 def generate_dataset_page(dataset):
     with open(DATASET_TEMPLATE, 'r') as template_file:
         template = template_file.read()
@@ -652,7 +662,7 @@ def generate_dataset_page(dataset):
     page_content = page_content.replace('{{description}}', _escape_html_text(dataset['description']))
     provenance_html = generate_provenance_section(dataset)
     page_content = page_content.replace('{{provenance}}', provenance_html)
-    page_content = page_content.replace('{{bibtex}}', _escape_html_text(dataset.get('bibtex', '')))
+    page_content = page_content.replace('{{bibtex}}', _escape_html_text(_dataset_bibtex_text(dataset)))
     page_content = page_content.replace('{{hyperedge_bins_js}}', hyperedge_bins_js)
     page_content = page_content.replace('{{degree_bins_js}}', degree_bins_js)
     page_content = page_content.replace('{{time_bins_js}}', time_bins_js)
