@@ -9,22 +9,19 @@
   "created_at": "2026-01-01",
   "updated_at": "2026-05-07",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-geometry-questions/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-geometry-questions/cat-edge-geometry-questions.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-geometry-questions/cat-edge-geometry-questions.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-geometry-questions/cat-edge-geometry-questions.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-geometry-questions/cat-edge-geometry-questions.json.gz",
+      "binary_download_size": 39173,
+      "json_download_size": 15290
+    }
   ],
   "vertices": 580,
   "edges": 888,
   "unique_edges": 888,
   "max_size_edge": 230,
-  "binary_download_sizes": [
-    39173
-  ],
-  "json_download_sizes": [
-    15290
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cat-edge-geometry-questions).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

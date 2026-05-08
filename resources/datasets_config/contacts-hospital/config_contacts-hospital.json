@@ -7,22 +7,19 @@
   ],
   "description": "This dataset contains the temporal network of contacts between patients, patients and health-care workers (HCWs) and among HCWs in a hospital ward in Lyon, France, from Monday, December 6, 2010 at 1:00 pm to Friday, December 10, 2010 at 2:00 pm. The study included 46 HCWs and 29 patients. Nodes represent individuals. Original data are pairwise contacts; hyperedges are constructed by promoting cliques of contacts into higher-order group interactions.",
   "source": "http://www.sociopatterns.org/datasets/hospital-ward-dynamic-contact-network/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-hospital/contacts-hospital.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-hospital/contacts-hospital.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-hospital/contacts-hospital.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-hospital/contacts-hospital.json.gz",
+      "binary_download_size": 503872,
+      "json_download_size": 137584
+    }
   ],
   "vertices": 75,
   "edges": 27835,
   "unique_edges": 1825,
   "max_size_edge": 5,
-  "binary_download_sizes": [
-    503872
-  ],
-  "json_download_sizes": [
-    137584
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

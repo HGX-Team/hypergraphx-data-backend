@@ -7,22 +7,19 @@
   ],
   "description": "This dataset is a subset of the Microsoft Academic Graph in which nodes represent authors and hyperedges correspond to their publications in NeurIPS (a top-tier computer science conference). Papers with more than 25 authors were omitted. Note that this dataset is derived from cat-edge-MAG-10; consequently, some publications may be missing when the same set of authors published at multiple conferences in that source. In such cases, the most frequent venue of a given hyperedge was used as the interaction category, and ties were discarded.",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-MAG-10/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-NeurIPS/coauth-cs-NeurIPS.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-NeurIPS/coauth-cs-NeurIPS.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-NeurIPS/coauth-cs-NeurIPS.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-NeurIPS/coauth-cs-NeurIPS.json.gz",
+      "binary_download_size": 246473,
+      "json_download_size": 110099
+    }
   ],
   "vertices": 12306,
   "edges": 7060,
   "unique_edges": 7060,
   "max_size_edge": 18,
-  "binary_download_sizes": [
-    246473
-  ],
-  "json_download_sizes": [
-    110099
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., coauth-cs-NeurIPS).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

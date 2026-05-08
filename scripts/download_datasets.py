@@ -39,6 +39,28 @@ def _urls(value) -> list[str]:
     return []
 
 
+def _version_download_urls(cfg: dict, *, all_versions: bool) -> list[str]:
+    versions = cfg.get("versions")
+    if isinstance(versions, list):
+        selected = versions if all_versions else versions[:1]
+        urls: list[str] = []
+        for entry in selected:
+            if not isinstance(entry, dict):
+                continue
+            for key in ("binary_download", "hgx_download", "json_download"):
+                url = entry.get(key)
+                if url:
+                    urls.append(str(url))
+        return urls
+
+    binary_urls = _urls(cfg.get("binary_download"))
+    json_urls = _urls(cfg.get("json_download"))
+    if not all_versions:
+        binary_urls = binary_urls[:1]
+        json_urls = json_urls[:1]
+    return binary_urls + json_urls
+
+
 def _filename_from_url(url: str) -> str:
     parsed = urlparse(url)
     name = Path(parsed.path).name
@@ -164,14 +186,7 @@ def main() -> int:
             failures.append(f"{dataset_id}: failed to read config ({exc})")
             continue
 
-        download_urls: list[str] = []
-        binary_urls = _urls(cfg.get("binary_download"))
-        json_urls = _urls(cfg.get("json_download"))
-        if not args.all_versions:
-            binary_urls = binary_urls[:1]
-            json_urls = json_urls[:1]
-        download_urls.extend(binary_urls)
-        download_urls.extend(json_urls)
+        download_urls = _version_download_urls(cfg, all_versions=args.all_versions)
 
         if not download_urls:
             print(f"[SKIP] {dataset_id}: no download links")

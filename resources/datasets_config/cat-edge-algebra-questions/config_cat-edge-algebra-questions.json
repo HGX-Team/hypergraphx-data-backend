@@ -9,22 +9,19 @@
   "created_at": "2026-01-01",
   "updated_at": "2026-05-07",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-algebra-questions/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-algebra-questions/cat-edge-algebra-questions.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-algebra-questions/cat-edge-algebra-questions.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-algebra-questions/cat-edge-algebra-questions.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-algebra-questions/cat-edge-algebra-questions.json.gz",
+      "binary_download_size": 33345,
+      "json_download_size": 11632
+    }
   ],
   "vertices": 423,
   "edges": 980,
   "unique_edges": 980,
   "max_size_edge": 107,
-  "binary_download_sizes": [
-    33345
-  ],
-  "json_download_sizes": [
-    11632
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cat-edge-algebra-questions).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

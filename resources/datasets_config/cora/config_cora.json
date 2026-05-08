@@ -5,22 +5,19 @@
   ],
   "description": "Co-citation network of scientific publications. Nodes correspond to publications. Each article is a centroid and forms a hyperedge that connects the article with all publications that cite it or are cited by it.",
   "source": "https://github.com/jianhao2016/AllSet?tab=readme-ov-file",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cora/cora.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cora/cora.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cora/cora.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cora/cora.json.gz",
+      "binary_download_size": 123879,
+      "json_download_size": 107146
+    }
   ],
   "vertices": 2708,
   "edges": 970,
   "unique_edges": 970,
   "max_size_edge": 43,
-  "binary_download_sizes": [
-    123879
-  ],
-  "json_download_sizes": [
-    107146
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

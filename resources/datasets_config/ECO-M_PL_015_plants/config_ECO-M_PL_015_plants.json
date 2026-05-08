@@ -6,22 +6,19 @@
   ],
   "description": "Nodes represent plant species. Each hyperedge represents a pollinator and contains the set of plant species visited by that pollinator (projection of a plant–pollinator bipartite network). This dataset contains the relationships between plants and pollinators from the 'Web of Life' project.",
   "source": "https://www.web-of-life.es/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ECO-M_PL_015_plants/ECO-M_PL_015_plants.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ECO-M_PL_015_plants/ECO-M_PL_015_plants.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ECO-M_PL_015_plants/ECO-M_PL_015_plants.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ECO-M_PL_015_plants/ECO-M_PL_015_plants.json.gz",
+      "binary_download_size": 19760,
+      "json_download_size": 10383
+    }
   ],
   "vertices": 131,
   "edges": 477,
   "unique_edges": 477,
   "max_size_edge": 104,
-  "binary_download_sizes": [
-    19760
-  ],
-  "json_download_sizes": [
-    10383
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

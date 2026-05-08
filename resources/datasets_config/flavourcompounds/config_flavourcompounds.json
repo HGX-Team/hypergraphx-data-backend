@@ -6,22 +6,19 @@
   ],
   "description": "A hypergraph representing the relationships between ingredients and their chemical compounds in various recipes. Each hyperedge connects multiple compounds that are found in a single ingredient. Hyperedges (ingredients) have metadata including ingredient name and category (Flower, Fish, Herb, etc.). Nodes (compounds) have metadata including compound name and CAS number.",
   "source": "https://github.com/lingcheng99/Flavor-Network/tree/master/data",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/flavourcompounds/flavourcompounds.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/flavourcompounds/flavourcompounds.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/flavourcompounds/flavourcompounds.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/flavourcompounds/flavourcompounds.json.gz",
+      "binary_download_size": 91883,
+      "json_download_size": 52514
+    }
   ],
   "vertices": 1107,
   "edges": 1153,
   "unique_edges": 1153,
   "max_size_edge": 239,
-  "binary_download_sizes": [
-    91883
-  ],
-  "json_download_sizes": [
-    52514
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

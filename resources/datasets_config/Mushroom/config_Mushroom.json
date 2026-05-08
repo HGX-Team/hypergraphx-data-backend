@@ -7,22 +7,19 @@
   ],
   "description": "The Mushroom dataset includes descriptions of hypothetical samples corresponding to 23 species of gilled mushrooms in the Agaricus and Lepiota Family. Each node corresponds to an instance of a mushroom and hyperedges are constructed according to co-occurrences of specific attribute values. For example, all mushrooms with a brown cap form a hyperedge. There are 8124 instances (nodes) described by 22 categorical attributes, leading to a total of 272 hyperedges. Construction following the methodology used by the authors of 'YOU ARE ALLSET: A MULTISET LEARNING FRAME-WORK FOR HYPERGRAPH NEURAL NETWORKS'.",
   "source": "https://github.com/jianhao2016/AllSet?tab=readme-ov-file",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mushroom/Mushroom.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mushroom/Mushroom.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mushroom/Mushroom.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mushroom/Mushroom.json.gz",
+      "binary_download_size": 168290,
+      "json_download_size": 146586
+    }
   ],
   "vertices": 8124,
   "edges": 272,
   "unique_edges": 272,
   "max_size_edge": 1808,
-  "binary_download_sizes": [
-    168290
-  ],
-  "json_download_sizes": [
-    146586
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

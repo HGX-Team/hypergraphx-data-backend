@@ -6,22 +6,19 @@
   ],
   "description": "Nodes represent tags. Hyperedges represent questions on stackoverflow.com and contain the set of tags applied to each question. The timestamps are recorded at millisecond resolution but are normalized to start at 0.",
   "source": "https://www.cs.cornell.edu/~arb/data/tags-stack-overflow/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/tags-stack-overflow/tags-stack-overflow.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/tags-stack-overflow/tags-stack-overflow.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/tags-stack-overflow/tags-stack-overflow.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/tags-stack-overflow/tags-stack-overflow.json.gz",
+      "binary_download_size": 476076666,
+      "json_download_size": 215400296
+    }
   ],
   "vertices": 49998,
   "edges": 14458875,
   "unique_edges": 5537637,
   "max_size_edge": 5,
-  "binary_download_sizes": [
-    476076666
-  ],
-  "json_download_sizes": [
-    215400296
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., tags-stack-overflow).",
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",

@@ -7,22 +7,19 @@
   ],
   "description": "A temporal network describing face-to-face interactions of students in a middle school in Utah, USA. Nodes represent individuals. Original data are pairwise contacts; hyperedges are constructed by promoting cliques of contacts into higher-order group interactions.",
   "source": "https://royalsocietypublishing.org/doi/suppl/10.1098/rsif.2015.0279",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mid1/Mid1.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mid1/Mid1.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mid1/Mid1.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mid1/Mid1.json.gz",
+      "binary_download_size": 8700396,
+      "json_download_size": 2171856
+    }
   ],
   "vertices": 591,
   "edges": 518191,
   "unique_edges": 76062,
   "max_size_edge": 10,
-  "binary_download_sizes": [
-    8700396
-  ],
-  "json_download_sizes": [
-    2171856
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

@@ -6,22 +6,19 @@
   ],
   "description": "Nodes correspond to animals in the Zoo database and use integer ids. Hyperedges correspond to shared attributes, i.e., each hyperedge contains the set of animals that share a given attribute. Node metadata records the animal name and type class.",
   "source": "https://archive.ics.uci.edu/dataset/111/zoo",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/zoo/zoo.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/zoo/zoo.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/zoo/zoo.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/zoo/zoo.json.gz",
+      "binary_download_size": 3289,
+      "json_download_size": 2408
+    }
   ],
   "vertices": 100,
   "edges": 41,
   "unique_edges": 41,
   "max_size_edge": 93,
-  "binary_download_sizes": [
-    3289
-  ],
-  "json_download_sizes": [
-    2408
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

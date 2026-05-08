@@ -6,22 +6,19 @@
   ],
   "description": "Recipe hypergraph from Japanese cuisine (Japan). Nodes represent ingredients. Each hyperedge represents a recipe and contains the set of ingredients used in that recipe.",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-japanese/cooking-japanese.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-japanese/cooking-japanese.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-japanese/cooking-japanese.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-japanese/cooking-japanese.json.gz",
+      "binary_download_size": 76200,
+      "json_download_size": 38234
+    }
   ],
   "vertices": 1439,
   "edges": 1387,
   "unique_edges": 1387,
   "max_size_edge": 34,
-  "binary_download_sizes": [
-    76200
-  ],
-  "json_download_sizes": [
-    38234
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cooking-japanese).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

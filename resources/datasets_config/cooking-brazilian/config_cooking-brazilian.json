@@ -6,22 +6,19 @@
   ],
   "description": "Recipe hypergraph from Brazilian cuisine (Brazil). Nodes represent ingredients. Each hyperedge represents a recipe and contains the set of ingredients used in that recipe.",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-brazilian/cooking-brazilian.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-brazilian/cooking-brazilian.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-brazilian/cooking-brazilian.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-brazilian/cooking-brazilian.json.gz",
+      "binary_download_size": 29937,
+      "json_download_size": 16673
+    }
   ],
   "vertices": 853,
   "edges": 448,
   "unique_edges": 448,
   "max_size_edge": 59,
-  "binary_download_sizes": [
-    29937
-  ],
-  "json_download_sizes": [
-    16673
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cooking-brazilian).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

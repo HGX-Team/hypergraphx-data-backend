@@ -7,22 +7,19 @@
   ],
   "description": "Temporal face-to-face proximity contacts. Nodes represent individuals. Original data are pairwise contacts; hyperedges are constructed by promoting cliques of contacts into higher-order group interactions.",
   "source": "http://www.sociopatterns.org/datasets/sfhh-conference-data-set/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-conference-sfhh/contacts-conference-sfhh.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-conference-sfhh/contacts-conference-sfhh.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-conference-sfhh/contacts-conference-sfhh.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-conference-sfhh/contacts-conference-sfhh.json.gz",
+      "binary_download_size": 926221,
+      "json_download_size": 261780
+    }
   ],
   "vertices": 403,
   "edges": 54306,
   "unique_edges": 10541,
   "max_size_edge": 9,
-  "binary_download_sizes": [
-    926221
-  ],
-  "json_download_sizes": [
-    261780
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

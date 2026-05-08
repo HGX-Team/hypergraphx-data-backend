@@ -6,22 +6,19 @@
   ],
   "description": "Recipe hypergraph from Vietnamese cuisine (Vietnam). Nodes represent ingredients. Each hyperedge represents a recipe and contains the set of ingredients used in that recipe.",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-vietnamese/cooking-vietnamese.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-vietnamese/cooking-vietnamese.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-vietnamese/cooking-vietnamese.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-vietnamese/cooking-vietnamese.json.gz",
+      "binary_download_size": 53650,
+      "json_download_size": 28455
+    }
   ],
   "vertices": 1108,
   "edges": 806,
   "unique_edges": 806,
   "max_size_edge": 31,
-  "binary_download_sizes": [
-    53650
-  ],
-  "json_download_sizes": [
-    28455
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cooking-vietnamese).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

@@ -6,22 +6,19 @@
   ],
   "description": "A hypergraph with hyperedges as sets of questions answered by users on MathOverflow. Nodes are labeled by the tags used in the questions. Nodes often have multiple labels.",
   "source": "https://www.cs.cornell.edu/~arb/data/mathoverflow-answers/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/mathoverflow-answers/mathoverflow-answers.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/mathoverflow-answers/mathoverflow-answers.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/mathoverflow-answers/mathoverflow-answers.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/mathoverflow-answers/mathoverflow-answers.json.gz",
+      "binary_download_size": 1319470,
+      "json_download_size": 1204429
+    }
   ],
   "vertices": 73851,
   "edges": 5445,
   "unique_edges": 5445,
   "max_size_edge": 1784,
-  "binary_download_sizes": [
-    1319470
-  ],
-  "json_download_sizes": [
-    1204429
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

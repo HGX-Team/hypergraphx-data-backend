@@ -7,22 +7,19 @@
   ],
   "description": "Co-authorship hypergraph built from physics publications indexed by the Physics and Astronomy Classification Scheme (PACS). Nodes represent authors. Each hyperedge represents a publication and contains its set of co-authors. This subset includes publications whose PACS code belongs to top-level category 1 (based on the first digit of the PACS code).",
   "source": "https://journals.aps.org/datasets",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-PACS-1/coauth-PACS-1.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-PACS-1/coauth-PACS-1.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-PACS-1/coauth-PACS-1.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-PACS-1/coauth-PACS-1.json.gz",
+      "binary_download_size": null,
+      "json_download_size": null
+    }
   ],
   "vertices": 68165,
   "edges": 36761,
   "unique_edges": 36761,
   "max_size_edge": 4932,
-  "binary_download_sizes": [
-    null
-  ],
-  "json_download_sizes": [
-    null
-  ],
   "license": "Custom",
   "license_url": "https://journals.aps.org/datasets",
   "license_note": "APS data sets are governed by APS source-specific terms and conditions; this is not an open license. Use may be restricted to approved research purposes."

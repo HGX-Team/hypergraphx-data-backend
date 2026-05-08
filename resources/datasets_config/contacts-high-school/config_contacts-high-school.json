@@ -7,11 +7,14 @@
   ],
   "description": "This dataset corresponds to the contacts and friendship relations between students in a high school in Marseilles, France, in December 2013. Nodes represent individuals. Original data are pairwise contacts; hyperedges are constructed by promoting cliques of contacts into higher-order group interactions.",
   "source": "http://www.sociopatterns.org/datasets/high-school-contact-and-friendship-networks/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-high-school/contacts-high-school.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-high-school/contacts-high-school.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-high-school/contacts-high-school.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-high-school/contacts-high-school.json.gz",
+      "binary_download_size": 2773595,
+      "json_download_size": 794913
+    }
   ],
   "edges": 172035,
   "unique_edges": 7818,
@@ -30,12 +33,6 @@
     "original_time": "(INT) Unix timestamp of the contact event (e.g., 1385982020)."
   },
   "max_size_edge": 5,
-  "binary_download_sizes": [
-    2773595
-  ],
-  "json_download_sizes": [
-    794913
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

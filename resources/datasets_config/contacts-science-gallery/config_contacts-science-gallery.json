@@ -7,22 +7,19 @@
   ],
   "description": "Temporal face-to-face proximity contacts. Nodes represent individuals. Original data are pairwise contacts; hyperedges are constructed by promoting cliques of contacts into higher-order group interactions.",
   "source": "http://www.sociopatterns.org/datasets/infectious-exhibition-dynamic-contact-networks/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-science-gallery/contacts-science-gallery.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-science-gallery/contacts-science-gallery.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-science-gallery/contacts-science-gallery.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-science-gallery/contacts-science-gallery.json.gz",
+      "binary_download_size": 5968357,
+      "json_download_size": 1801331
+    }
   ],
   "vertices": 10972,
   "edges": 338815,
   "unique_edges": 52706,
   "max_size_edge": 5,
-  "binary_download_sizes": [
-    5968357
-  ],
-  "json_download_sizes": [
-    1801331
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., contacts-science-gallery).",
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",

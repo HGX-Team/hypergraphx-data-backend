@@ -7,22 +7,19 @@
   ],
   "description": "Nodes represent Bitcoin addresses. Each hyperedge represents a transaction and contains the set of addresses involved in that transaction. This dataset contains the first 1.5M Bitcoin transactions of Jun. 2015.",
   "source": "https://docs.cloud.google.com/bigquery/public-data",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/crypto-bitcoin-201506/crypto-bitcoin-201506.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/crypto-bitcoin-201506/crypto-bitcoin-201506.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/crypto-bitcoin-201506/crypto-bitcoin-201506.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/crypto-bitcoin-201506/crypto-bitcoin-201506.json.gz",
+      "binary_download_size": 145192890,
+      "json_download_size": 110465087
+    }
   ],
   "vertices": 2534508,
   "edges": 1403013,
   "unique_edges": 1286877,
   "max_size_edge": 4024,
-  "binary_download_sizes": [
-    145192890
-  ],
-  "json_download_sizes": [
-    110465087
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., crypto-bitcoin-201506).",
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",

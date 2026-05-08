@@ -7,22 +7,19 @@
   ],
   "description": "Nodes represent legislators. Each hyperedge represents a bill and contains the set of legislators associated with that bill (e.g., sponsor and cosponsor lists).",
   "source": "https://www.cs.cornell.edu/~arb/data/congress-bills/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/congress-bills/congress-bills.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/congress-bills/congress-bills.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/congress-bills/congress-bills.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/congress-bills/congress-bills.json.gz",
+      "binary_download_size": 9731581,
+      "json_download_size": 3536381
+    }
   ],
   "vertices": 1718,
   "edges": 282049,
   "unique_edges": 105733,
   "max_size_edge": 400,
-  "binary_download_sizes": [
-    9731581
-  ],
-  "json_download_sizes": [
-    3536381
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., congress-bills).",
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",

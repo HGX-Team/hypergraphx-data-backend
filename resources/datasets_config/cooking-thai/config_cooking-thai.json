@@ -6,22 +6,19 @@
   ],
   "description": "Recipe hypergraph from Thai cuisine (Thailand). Nodes represent ingredients. Each hyperedge represents a recipe and contains the set of ingredients used in that recipe.",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-thai/cooking-thai.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-thai/cooking-thai.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-thai/cooking-thai.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-thai/cooking-thai.json.gz",
+      "binary_download_size": 91942,
+      "json_download_size": 45474
+    }
   ],
   "vertices": 1376,
   "edges": 1518,
   "unique_edges": 1518,
   "max_size_edge": 40,
-  "binary_download_sizes": [
-    91942
-  ],
-  "json_download_sizes": [
-    45474
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cooking-thai).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

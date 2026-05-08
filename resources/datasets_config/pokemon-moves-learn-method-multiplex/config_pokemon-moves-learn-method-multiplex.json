@@ -5,26 +5,23 @@
     "Biology",
     "Games"
   ],
-  "description": "Multiplex move learnset hypergraph with Pok\u00e9API Pok\u00e9mon entries as nodes and the four main learn methods as layers: level-up, machine, egg, and tutor. In each layer, a hyperedge corresponds to one move and contains the Pok\u00e9mon that can learn it by that method.",
+  "description": "Multiplex move learnset hypergraph with PokéAPI Pokémon entries as nodes and the four main learn methods as layers: level-up, machine, egg, and tutor. In each layer, a hyperedge corresponds to one move and contains the Pokémon that can learn it by that method.",
   "created_at": "2026-05-07",
   "updated_at": "2026-05-07",
   "source": "https://pokeapi.co/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-learn-method-multiplex/pokemon-moves-learn-method-multiplex.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-learn-method-multiplex/pokemon-moves-learn-method-multiplex.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-learn-method-multiplex/pokemon-moves-learn-method-multiplex.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-learn-method-multiplex/pokemon-moves-learn-method-multiplex.json.gz",
+      "binary_download_size": 284583,
+      "json_download_size": 195203
+    }
   ],
   "vertices": 1328,
   "edges": 1779,
   "unique_edges": 1779,
   "max_size_edge": 1246,
-  "binary_download_sizes": [
-    284583
-  ],
-  "json_download_sizes": [
-    195203
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., pokemon-moves-learn-method-multiplex).",
     "type": "(STRING) Hypergraph type (e.g., MultiplexHypergraph).",
@@ -35,15 +32,15 @@
     "layer_type": "(STRING) Semantic type of multiplex layers (e.g., learn_method)."
   },
   "nodes_metadata": {
-    "pokemon_id": "(INT) Pok\u00e9API Pok\u00e9mon identifier (e.g., 25).",
-    "name": "(STRING) Pok\u00e9mon name (e.g., pikachu).",
-    "species": "(STRING) Pok\u00e9mon species name (e.g., pikachu).",
-    "generation": "(STRING) Generation where the Pok\u00e9mon species was introduced (e.g., generation-i).",
-    "is_default": "(BOOL) Whether this is the default Pok\u00e9mon form (e.g., true).",
-    "primary_type": "(STRING) Primary Pok\u00e9mon type (e.g., electric).",
-    "secondary_type": "(STRING) Secondary Pok\u00e9mon type when present (e.g., flying).",
-    "height": "(INT) Height in Pok\u00e9API decimetre units (e.g., 4).",
-    "weight": "(INT) Weight in Pok\u00e9API hectogram units (e.g., 60).",
+    "pokemon_id": "(INT) PokéAPI Pokémon identifier (e.g., 25).",
+    "name": "(STRING) Pokémon name (e.g., pikachu).",
+    "species": "(STRING) Pokémon species name (e.g., pikachu).",
+    "generation": "(STRING) Generation where the Pokémon species was introduced (e.g., generation-i).",
+    "is_default": "(BOOL) Whether this is the default Pokémon form (e.g., true).",
+    "primary_type": "(STRING) Primary Pokémon type (e.g., electric).",
+    "secondary_type": "(STRING) Secondary Pokémon type when present (e.g., flying).",
+    "height": "(INT) Height in PokéAPI decimetre units (e.g., 4).",
+    "weight": "(INT) Weight in PokéAPI hectogram units (e.g., 60).",
     "base_hp": "(INT) Base HP stat (e.g., 35).",
     "base_attack": "(INT) Base attack stat (e.g., 55).",
     "base_defense": "(INT) Base defense stat (e.g., 40).",
@@ -53,17 +50,17 @@
   },
   "edges_metadata": {
     "layer": "(STRING) Multiplex layer identifier (e.g., level-up).",
-    "move_ids": "(list of INTs) Pok\u00e9API move identifiers represented by the hyperedge (e.g., [85]).",
-    "move_names": "(list of STRINGs) Move names represented by the hyperedge (e.g., [thunderbolt]).",
-    "move_types": "(list of STRINGs) Move types represented by the hyperedge (e.g., [electric]).",
-    "damage_classes": "(list of STRINGs) Damage classes represented by the hyperedge (e.g., [special]).",
-    "generations": "(list of STRINGs) Move introduction generations represented by the hyperedge (e.g., [generation-i]).",
-    "version_groups": "(list of STRINGs) Version groups in which the incidence appears (e.g., [red-blue]).",
-    "learn_methods": "(list of STRINGs) Learn methods represented by the incidence (e.g., [level-up]).",
-    "min_level": "(INT) Minimum nonzero level at which a move is learned, when available (e.g., 15).",
-    "n_observations": "(INT) Number of raw Pok\u00e9API learnset observations aggregated into the hyperedge (e.g., 42)."
+    "move_ids": "(LIST[INT]) PokéAPI move identifiers represented by the hyperedge (e.g., [85]).",
+    "move_names": "(LIST[STRING]) Move names represented by the hyperedge (e.g., [thunderbolt]).",
+    "move_types": "(LIST[STRING]) Move types represented by the hyperedge (e.g., [electric]).",
+    "damage_classes": "(LIST[STRING]) Damage classes represented by the hyperedge (e.g., [special]).",
+    "generations": "(LIST[STRING]) Move introduction generations represented by the hyperedge (e.g., [generation-i]).",
+    "version_groups": "(LIST[STRING]) Version groups in which the incidence appears (e.g., [red-blue]).",
+    "learn_methods": "(STRING) Learn method represented by the multiplex layer (e.g., level-up).",
+    "min_level": "(LIST[INT]) Minimum nonzero levels at which a move is learned, when available (e.g., [15]).",
+    "n_observations": "(LIST[INT]) Numbers of raw PokéAPI learnset observations aggregated into the hyperedge (e.g., [42])."
   },
   "license": "BSD-3-Clause",
   "license_url": "https://github.com/PokeAPI/pokeapi/blob/master/LICENSE.md",
-  "license_note": "Data derived from Pok\u00e9API. Pok\u00e9mon and Pok\u00e9mon character names are trademarks of Nintendo. Pok\u00e9API is not affiliated with Nintendo, Game Freak, or Creatures."
+  "license_note": "Data derived from PokéAPI. Pokémon and Pokémon character names are trademarks of Nintendo. PokéAPI is not affiliated with Nintendo, Game Freak, or Creatures."
 }

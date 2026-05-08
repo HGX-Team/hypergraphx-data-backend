@@ -6,26 +6,23 @@
     "Games",
     "Geography"
   ],
-  "description": "Dual of the location encounter dataset. Nodes are Pok\u00e9API location areas and each hyperedge represents one Pok\u00e9mon, containing the location areas where that Pok\u00e9mon can be encountered in at least one game version.",
+  "description": "Dual of the location encounter dataset. Nodes are PokéAPI location areas and each hyperedge represents one Pokémon, containing the location areas where that Pokémon can be encountered in at least one game version.",
   "created_at": "2026-05-07",
   "updated_at": "2026-05-07",
   "source": "https://pokeapi.co/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-locations-dual/pokemon-locations-dual.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-locations-dual/pokemon-locations-dual.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-locations-dual/pokemon-locations-dual.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-locations-dual/pokemon-locations-dual.json.gz",
+      "binary_download_size": 67028,
+      "json_download_size": 53940
+    }
   ],
   "vertices": 884,
   "edges": 618,
   "unique_edges": 618,
   "max_size_edge": 244,
-  "binary_download_sizes": [
-    67028
-  ],
-  "json_download_sizes": [
-    53940
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., pokemon-locations-dual).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
@@ -35,31 +32,31 @@
     "edge_type": "(STRING) Semantic type of hyperedges (e.g., pokemon)."
   },
   "nodes_metadata": {
-    "location_area_id": "(INT) Pok\u00e9API location-area identifier (e.g., 285).",
+    "location_area_id": "(INT) PokéAPI location-area identifier (e.g., 285).",
     "area_name": "(STRING) Location area name (e.g., pallet-town-area).",
     "location_name": "(STRING) Parent location name (e.g., pallet-town).",
     "region": "(STRING) Region containing the location (e.g., kanto)."
   },
   "edges_metadata": {
-    "pokemon_id": "(INT) Pok\u00e9API Pok\u00e9mon identifier (e.g., 25).",
-    "name": "(STRING) Pok\u00e9mon name (e.g., pikachu).",
-    "species": "(STRING) Pok\u00e9mon species name (e.g., pikachu).",
-    "generation": "(STRING) Generation where the Pok\u00e9mon species was introduced (e.g., generation-i).",
-    "is_default": "(BOOL) Whether this is the default Pok\u00e9mon form (e.g., true).",
-    "primary_type": "(STRING) Primary Pok\u00e9mon type (e.g., electric).",
-    "secondary_type": "(STRING) Secondary Pok\u00e9mon type when present (e.g., flying).",
-    "height": "(INT) Height in Pok\u00e9API decimetre units (e.g., 4).",
-    "weight": "(INT) Weight in Pok\u00e9API hectogram units (e.g., 60).",
-    "base_hp": "(INT) Base HP stat (e.g., 35).",
-    "base_attack": "(INT) Base attack stat (e.g., 55).",
-    "base_defense": "(INT) Base defense stat (e.g., 40).",
-    "base_sp_attack": "(INT) Base special attack stat (e.g., 50).",
-    "base_sp_defense": "(INT) Base special defense stat (e.g., 50).",
-    "base_speed": "(INT) Base speed stat (e.g., 90).",
-    "versions": "(list of STRINGs) Game versions represented in the Pok\u00e9mon location edge (e.g., [red]).",
-    "encounter_methods": "(list of STRINGs) Encounter methods represented in the Pok\u00e9mon location edge (e.g., [walk])."
+    "pokemon_id": "(LIST[INT]) PokéAPI Pokémon identifiers represented by the hyperedge (e.g., [25]).",
+    "name": "(LIST[STRING]) Pokémon names represented by the hyperedge (e.g., [pikachu]).",
+    "species": "(LIST[STRING]) Pokémon species names represented by the hyperedge (e.g., [pikachu]).",
+    "generation": "(LIST[STRING]) Generations where the Pokémon species were introduced represented by the hyperedge (e.g., [generation-i]).",
+    "is_default": "(LIST[BOOL]) Whether the represented Pokémon forms are default forms represented by the hyperedge (e.g., [true]).",
+    "primary_type": "(LIST[STRING]) Primary Pokémon types represented by the hyperedge (e.g., [electric]).",
+    "secondary_type": "(LIST[STRING]) Secondary Pokémon types when present represented by the hyperedge (e.g., [flying]).",
+    "height": "(LIST[INT]) Heights in PokéAPI decimetre units represented by the hyperedge (e.g., [4]).",
+    "weight": "(LIST[INT]) Weights in PokéAPI hectogram units represented by the hyperedge (e.g., [60]).",
+    "base_hp": "(LIST[INT]) Base HP stats represented by the hyperedge (e.g., [35]).",
+    "base_attack": "(LIST[INT]) Base attack stats represented by the hyperedge (e.g., [55]).",
+    "base_defense": "(LIST[INT]) Base defense stats represented by the hyperedge (e.g., [40]).",
+    "base_sp_attack": "(LIST[INT]) Base special attack stats represented by the hyperedge (e.g., [50]).",
+    "base_sp_defense": "(LIST[INT]) Base special defense stats represented by the hyperedge (e.g., [50]).",
+    "base_speed": "(LIST[INT]) Base speed stats represented by the hyperedge (e.g., [90]).",
+    "versions": "(LIST[STRING]) Game versions represented in the Pokémon location edge (e.g., [red]).",
+    "encounter_methods": "(LIST[STRING]) Encounter methods represented in the Pokémon location edge (e.g., [walk])."
   },
   "license": "BSD-3-Clause",
   "license_url": "https://github.com/PokeAPI/pokeapi/blob/master/LICENSE.md",
-  "license_note": "Data derived from Pok\u00e9API. Pok\u00e9mon and Pok\u00e9mon character names are trademarks of Nintendo. Pok\u00e9API is not affiliated with Nintendo, Game Freak, or Creatures."
+  "license_note": "Data derived from PokéAPI. Pokémon and Pokémon character names are trademarks of Nintendo. PokéAPI is not affiliated with Nintendo, Game Freak, or Creatures."
 }

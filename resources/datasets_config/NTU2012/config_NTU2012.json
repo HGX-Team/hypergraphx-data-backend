@@ -5,22 +5,19 @@
   ],
   "description": "National Taiwan University 3D model dataset from Chen et al (Chen et al. 2003] Chen, D.-Y.; Tian, X.-P.; Shen, Y.-T.; and Ouhyoung, M. 2003. On Visual Similarity Based 3D Model Retrieval. In Computer Graph). The NTU dataset is composed of 2,012 3D shapes from 67 categories, including car, chair, chess, chip, clock, cup, door, frame, pen, plant leaf and so on. The graph structure is constructed using a probability graph based on node distance. See 'Hypergraph Neural Networks' (https://arxiv.org/pdf/1809.09401) for details on construction. ",
   "source": "https://github.com/jianhao2016/AllSet?tab=readme-ov-file",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NTU2012/NTU2012.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NTU2012/NTU2012.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NTU2012/NTU2012.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NTU2012/NTU2012.json.gz",
+      "binary_download_size": null,
+      "json_download_size": null
+    }
   ],
   "vertices": 2012,
   "edges": 1635,
   "unique_edges": 1635,
   "max_size_edge": 5,
-  "binary_download_sizes": [
-    null
-  ],
-  "json_download_sizes": [
-    null
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

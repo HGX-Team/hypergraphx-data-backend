@@ -5,11 +5,9 @@ Update config_{dirname}.json files under a root directory to include dataset URL
 For each immediate subdirectory of ROOT:
   - Expect a file: subdir/config_{subdir.name}.json
   - Read its "name" attribute.
-  - Ensure:
-      json_download  includes "https://cricca.disi.unitn.it/datasets/hypergraphx-data/{name}/{name}.json.gz"
-      binary_download includes "https://cricca.disi.unitn.it/datasets/hypergraphx-data/{name}/{name}.hgx.gz"
-  - The script creates the lists if they don't exist, removes empty-string placeholders,
-    and avoids duplicates.
+  - Ensure a canonical versions[0] entry exists with:
+      json_download   "https://cricca.disi.unitn.it/datasets/hypergraphx-data/{name}/{name}.json.gz"
+      binary_download "https://cricca.disi.unitn.it/datasets/hypergraphx-data/{name}/{name}.hgx.gz"
 
 Usage:
     python update_configs.py /path/to/root
@@ -24,7 +22,7 @@ from typing import Any, Dict, List
 BASE = "https://cricca.disi.unitn.it/datasets/hypergraphx-data"
 
 def clean_list(value: Any) -> List[str]:
-    """Return a clean list of non-empty strings from value (list or other)."""
+    """Return a clean list of non-empty strings from value (list or scalar)."""
     if isinstance(value, list):
         items = []
         for x in value:
@@ -34,6 +32,32 @@ def clean_list(value: Any) -> List[str]:
                     items.append(s)
         return items
     return []
+
+def normalize_versions(data: Dict[str, Any]) -> List[Dict[str, Any]]:
+    versions = data.get("versions")
+    if isinstance(versions, list):
+        cleaned = [item for item in versions if isinstance(item, dict)]
+        if cleaned:
+            return cleaned
+
+    binary_downloads = clean_list(data.get("binary_download"))
+    json_downloads = clean_list(data.get("json_download"))
+    binary_sizes = data.get("binary_download_sizes") if isinstance(data.get("binary_download_sizes"), list) else []
+    json_sizes = data.get("json_download_sizes") if isinstance(data.get("json_download_sizes"), list) else []
+    count = max(len(binary_downloads), len(json_downloads))
+    out = []
+    for idx in range(count):
+        entry: Dict[str, Any] = {"version": "1.0.0" if idx == 0 else f"{idx + 1}.0.0"}
+        if idx < len(binary_downloads):
+            entry["binary_download"] = binary_downloads[idx]
+        if idx < len(json_downloads):
+            entry["json_download"] = json_downloads[idx]
+        if idx < len(binary_sizes):
+            entry["binary_download_size"] = binary_sizes[idx]
+        if idx < len(json_sizes):
+            entry["json_download_size"] = json_sizes[idx]
+        out.append(entry)
+    return out
 
 def ensure_url(lst: List[str], url: str) -> List[str]:
     """Append url if not already present, preserving order."""
@@ -62,9 +86,24 @@ def process_config_file(cfg_path: Path) -> bool:
 
     original = json.dumps(data, sort_keys=True)
 
-    # Normalize and update lists
-    data["json_download"]   = ensure_url(clean_list(data.get("json_download")), json_url)
-    data["binary_download"] = ensure_url(clean_list(data.get("binary_download")), binary_url)
+    versions = normalize_versions(data)
+    if not versions:
+        versions = [{"version": "1.0.0"}]
+
+    latest = versions[0]
+    latest.setdefault("version", "1.0.0")
+    latest["json_download"] = json_url
+    latest["binary_download"] = binary_url
+    data["versions"] = versions
+    for legacy_key in (
+        "json_download",
+        "binary_download",
+        "json_download_sizes",
+        "binary_download_sizes",
+        "json_download_size",
+        "binary_download_size",
+    ):
+        data.pop(legacy_key, None)
 
     updated = json.dumps(data, sort_keys=True)
     if updated != original:

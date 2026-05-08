@@ -6,22 +6,19 @@
   ],
   "description": "Nodes represent legislators. Each hyperedge represents a committee and contains the set of legislators serving on that committee.",
   "source": "https://www.cs.cornell.edu/~arb/data/house-committees/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-committees/house-committees.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-committees/house-committees.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-committees/house-committees.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-committees/house-committees.json.gz",
+      "binary_download_size": 46197,
+      "json_download_size": 28892
+    }
   ],
   "vertices": 1290,
   "edges": 341,
   "unique_edges": 336,
   "max_size_edge": 82,
-  "binary_download_sizes": [
-    46197
-  ],
-  "json_download_sizes": [
-    28892
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., house-committees).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

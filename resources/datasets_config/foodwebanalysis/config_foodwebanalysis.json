@@ -6,20 +6,17 @@
   ],
   "description": "The data is collected from the Florida bay foodweb. The bifans of the network is extracted to build submodular hyperedges. Node labels/classes indicate whether the corresponding species is a producer, an invertebrate or a vertebrate (fish, birds or large animals).",
   "source": "https://sites.google.com/view/panli-purdue/datasets/foodweb?authuser=0",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/foodwebanalysis/foodwebanalysis.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/foodwebanalysis/foodwebanalysis.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/foodwebanalysis/foodwebanalysis.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/foodwebanalysis/foodwebanalysis.json.gz",
+      "binary_download_size": null,
+      "json_download_size": null
+    }
   ],
   "vertices": 128,
   "edges": 127497,
   "unique_edges": 127497,
-  "max_size_edge": 4,
-  "binary_download_sizes": [
-    null
-  ],
-  "json_download_sizes": [
-    null
-  ]
+  "max_size_edge": 4
 }

@@ -7,22 +7,19 @@
   ],
   "description": "Data on face-to-face interactions were collected on Thursday, October 1st and Friday, October 2nd 2009. We recorded 77,602 contact events between 242 individuals (232 children and 10 teachers). In this setting, each child has on average 323 contacts per day with 47 other children, leading to an average daily interaction time of 176 minutes. Most contacts are brief, but long contacts are also observed. Contacts occur mostly within each class, and each child spends on average three times more time in contact with classmates than with children of other classes. Nodes represent individuals. Original data are pairwise contacts; hyperedges are constructed by promoting cliques of contacts into higher-order group interactions.",
   "source": "http://www.sociopatterns.org/datasets/primary-school-temporal-network-data/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-primary-school/contacts-primary-school.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-primary-school/contacts-primary-school.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-primary-school/contacts-primary-school.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-primary-school/contacts-primary-school.json.gz",
+      "binary_download_size": 1791551,
+      "json_download_size": 517792
+    }
   ],
   "vertices": 242,
   "edges": 106879,
   "unique_edges": 12704,
   "max_size_edge": 5,
-  "binary_download_sizes": [
-    1791551
-  ],
-  "json_download_sizes": [
-    517792
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

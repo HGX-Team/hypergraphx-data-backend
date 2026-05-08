@@ -8,22 +8,19 @@
   ],
   "description": "Nodes represent authors. Each hyperedge represents a publication and contains the set of co-authors of that publication. This is a temporal higher-order network dataset, where each hyperedge is a publication recorded on DBLP. Timestamps are the year of publication.",
   "source": "https://www.cs.cornell.edu/~arb/data/coauth-DBLP/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-DBLP/coauth-DBLP.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-DBLP/coauth-DBLP.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-DBLP/coauth-DBLP.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-DBLP/coauth-DBLP.json.gz",
+      "binary_download_size": 121251017,
+      "json_download_size": 60936556
+    }
   ],
   "vertices": 1930378,
   "edges": 3700681,
   "unique_edges": 2467396,
   "max_size_edge": 280,
-  "binary_download_sizes": [
-    121251017
-  ],
-  "json_download_sizes": [
-    60936556
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., coauth-DBLP).",
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",

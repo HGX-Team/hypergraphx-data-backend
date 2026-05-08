@@ -6,22 +6,19 @@
   ],
   "description": "Recipe hypergraph from Chinese cuisine (China). Nodes represent ingredients. Each hyperedge represents a recipe and contains the set of ingredients used in that recipe.",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-chinese/cooking-chinese.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-chinese/cooking-chinese.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-chinese/cooking-chinese.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-chinese/cooking-chinese.json.gz",
+      "binary_download_size": 144492,
+      "json_download_size": 68197
+    }
   ],
   "vertices": 1792,
   "edges": 2644,
   "unique_edges": 2644,
   "max_size_edge": 38,
-  "binary_download_sizes": [
-    144492
-  ],
-  "json_download_sizes": [
-    68197
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cooking-chinese).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

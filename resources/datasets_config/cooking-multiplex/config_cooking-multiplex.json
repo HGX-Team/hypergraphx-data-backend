@@ -6,22 +6,19 @@
   ],
   "description": "Multiplex recipe hypergraph spanning multiple cuisines. Nodes represent ingredients. Each hyperedge represents a recipe and contains the set of ingredients used in that recipe. Layers correspond to different cuisine collections.",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-multiplex/cooking-multiplex.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-multiplex/cooking-multiplex.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-multiplex/cooking-multiplex.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-multiplex/cooking-multiplex.json.gz",
+      "binary_download_size": 2134527,
+      "json_download_size": 890479
+    }
   ],
   "vertices": 6714,
   "edges": 39257,
   "unique_edges": 39243,
   "max_size_edge": 65,
-  "binary_download_sizes": [
-    2134527
-  ],
-  "json_download_sizes": [
-    890479
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cooking-multiplex).",
     "type": "(STRING) Hypergraph type (e.g., MultiplexHypergraph).",

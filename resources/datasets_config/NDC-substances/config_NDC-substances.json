@@ -8,22 +8,19 @@
   ],
   "description": "Nodes represent chemical substances. Each hyperedge represents a drug (identified by its NDC code) and contains the set of substances that make up that drug. This is a temporal higher-order network dataset from the National Drug Code (NDC) Directory, maintained by the U.S. Food and Drug Administration under the Drug Listing Act of 1972.",
   "source": "https://www.cs.cornell.edu/~arb/data/NDC-substances/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-substances/NDC-substances.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-substances/NDC-substances.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-substances/NDC-substances.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-substances/NDC-substances.json.gz",
+      "binary_download_size": 2989431,
+      "json_download_size": 1860019
+    }
   ],
   "vertices": 5556,
   "edges": 112919,
   "unique_edges": 10273,
   "max_size_edge": 187,
-  "binary_download_sizes": [
-    2989431
-  ],
-  "json_download_sizes": [
-    1860019
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., NDC-substances).",
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",

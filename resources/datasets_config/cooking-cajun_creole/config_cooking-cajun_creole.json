@@ -6,22 +6,19 @@
   ],
   "description": "Recipe hypergraph from Cajun/Creole cuisine (the United States (Cajun/Creole, Louisiana)). Nodes represent ingredients. Each hyperedge represents a recipe and contains the set of ingredients used in that recipe.",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-cajun_creole/cooking-cajun_creole.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-cajun_creole/cooking-cajun_creole.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-cajun_creole/cooking-cajun_creole.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-cajun_creole/cooking-cajun_creole.json.gz",
+      "binary_download_size": 94765,
+      "json_download_size": 47687
+    }
   ],
   "vertices": 1576,
   "edges": 1525,
   "unique_edges": 1525,
   "max_size_edge": 31,
-  "binary_download_sizes": [
-    94765
-  ],
-  "json_download_sizes": [
-    47687
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cooking-cajun_creole).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

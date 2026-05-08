@@ -6,22 +6,19 @@
   ],
   "description": "A hypergraph describing which languages are spoken in which countries. Nodes represent countries and hyperedges represent languages spoken by the countries.",
   "source": "University of Groningen. 2016. \"World Languages.\" University of Groningen Open Data. http://opendata.rug.nl/data sets/5c6ec52c374249a781aede5802994c95_0?geometry=153.457%2C15.653%2C-122.52%2C76.276. Accessed through Resource Watch, (date). www.resourcewatch.org.",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/language-country/language-country.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/language-country/language-country.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/language-country/language-country.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/language-country/language-country.json.gz",
+      "binary_download_size": 5379,
+      "json_download_size": 3354
+    }
   ],
   "vertices": 234,
   "edges": 109,
   "unique_edges": 109,
   "max_size_edge": 77,
-  "binary_download_sizes": [
-    5379
-  ],
-  "json_download_sizes": [
-    3354
-  ],
   "hypergraph_metadata": {
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."

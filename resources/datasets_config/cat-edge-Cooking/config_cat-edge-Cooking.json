@@ -7,22 +7,19 @@
   ],
   "description": "Hypergraph where nodes are food ingredients, hyperedges are recipes made from combining multiple ingredients and categories indicate cuisine (e.g., Southern-US, Indian, Spanish).",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-Cooking/cat-edge-Cooking.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-Cooking/cat-edge-Cooking.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-Cooking/cat-edge-Cooking.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cat-edge-Cooking/cat-edge-Cooking.json.gz",
+      "binary_download_size": 2103485,
+      "json_download_size": 907566
+    }
   ],
   "vertices": 6714,
   "edges": 39243,
   "unique_edges": 39243,
   "max_size_edge": 65,
-  "binary_download_sizes": [
-    2103485
-  ],
-  "json_download_sizes": [
-    907566
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cat-edge-Cooking).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

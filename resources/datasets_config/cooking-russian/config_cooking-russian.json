@@ -6,22 +6,19 @@
   ],
   "description": "Recipe hypergraph from Russian cuisine (Russia). Nodes represent ingredients. Each hyperedge represents a recipe and contains the set of ingredients used in that recipe.",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-russian/cooking-russian.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-russian/cooking-russian.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-russian/cooking-russian.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-russian/cooking-russian.json.gz",
+      "binary_download_size": 32359,
+      "json_download_size": 17825
+    }
   ],
   "vertices": 872,
   "edges": 486,
   "unique_edges": 486,
   "max_size_edge": 25,
-  "binary_download_sizes": [
-    32359
-  ],
-  "json_download_sizes": [
-    17825
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cooking-russian).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",

@@ -239,18 +239,9 @@ def generate_metadata_table(metadata, title):
 
 def generate_versions_section(dataset):
     """Generates the HTML for dataset versions dynamically."""
-
-    # In the lists in the config file, most recent versions come first
-
-    binary_links = dataset.get("binary_download", [])
-    json_links = dataset.get("json_download", [])
-    binary_sizes = dataset.get("binary_download_size", dataset.get("binary_download_sizes", []))
-    json_sizes = dataset.get("json_download_size", dataset.get("json_download_sizes", []))
+    versions = normalize_dataset_versions(dataset)
 
     versions_html = '<div class="mb-3">\n<h4><i class="fa-solid fa-download section-title-icon"></i> Download</h4>\n<ul class="versions-list">\n'
-    
-    # Ensure both lists have the same length
-    num_versions = min(len(binary_links), len(json_links))
 
     def format_size(value):
         try:
@@ -264,16 +255,17 @@ def generate_versions_section(dataset):
             idx += 1
         return f"{size:.1f} {suffixes[idx]}"
 
-    for i in range(num_versions):
-        bin_size = format_size(binary_sizes[i]) if i < len(binary_sizes) else ''
-        json_size = format_size(json_sizes[i]) if i < len(json_sizes) else ''
+    for entry in versions:
+        bin_size = format_size(entry.get("binary_download_size"))
+        json_size = format_size(entry.get("json_download_size"))
         bin_label = f'Binary <span class="download-size">({bin_size})</span>' if bin_size else "Binary"
         json_label = f'JSON <span class="download-size">({json_size})</span>' if json_size else "JSON"
-        binary_href = _escape_html_attr(_safe_external_href(_as_str(binary_links[i])))
-        json_href = _escape_html_attr(_safe_external_href(_as_str(json_links[i])))
+        binary_href = _escape_html_attr(_safe_external_href(_as_str(entry.get("binary_download"))))
+        json_href = _escape_html_attr(_safe_external_href(_as_str(entry.get("json_download"))))
+        version_label = _escape_html_text(entry.get("version") or "1.0.0")
         versions_html += f'''
         <li>
-            <span class="version-label">Version {num_versions - i}.0</span>
+            <span class="version-label">Version {version_label}</span>
             <a href="{binary_href}" target="_blank" rel="noopener noreferrer">
                 <i class="fa-solid fa-file-zipper"></i> {bin_label}
             </a>
@@ -285,6 +277,44 @@ def generate_versions_section(dataset):
 
     versions_html += '</ul>\n</div>\n'
     return versions_html
+
+def normalize_dataset_versions(dataset):
+    """Return download versions in canonical order, most recent first."""
+    versions = dataset.get("versions")
+    if isinstance(versions, list):
+        normalized = []
+        for entry in versions:
+            if not isinstance(entry, dict):
+                continue
+            binary_url = entry.get("binary_download") or entry.get("hgx_download")
+            json_url = entry.get("json_download")
+            if not binary_url and not json_url:
+                continue
+            normalized.append({
+                "version": entry.get("version") or "1.0.0",
+                "binary_download": binary_url,
+                "json_download": json_url,
+                "binary_download_size": entry.get("binary_download_size") or entry.get("hgx_download_size"),
+                "json_download_size": entry.get("json_download_size"),
+            })
+        if normalized:
+            return normalized
+
+    binary_links = dataset.get("binary_download", [])
+    json_links = dataset.get("json_download", [])
+    binary_sizes = dataset.get("binary_download_size", dataset.get("binary_download_sizes", []))
+    json_sizes = dataset.get("json_download_size", dataset.get("json_download_sizes", []))
+    num_versions = min(len(binary_links), len(json_links))
+    fallback_versions = []
+    for i in range(num_versions):
+        fallback_versions.append({
+            "version": f"{num_versions - i}.0.0",
+            "binary_download": binary_links[i],
+            "json_download": json_links[i],
+            "binary_download_size": binary_sizes[i] if i < len(binary_sizes) else None,
+            "json_download_size": json_sizes[i] if i < len(json_sizes) else None,
+        })
+    return fallback_versions
 
 def load_site_config():
     if not SITE_CONFIG_FILE.exists():
@@ -424,11 +454,38 @@ def fetch_url_size(url, timeout=10):
 def maybe_fill_download_sizes(dataset):
     if not FETCH_REMOTE_SIZES:
         return
+    if isinstance(dataset.get("versions"), list):
+        changed = False
+        for entry in dataset["versions"]:
+            if not isinstance(entry, dict):
+                continue
+            binary_url = entry.get("binary_download") or entry.get("hgx_download")
+            json_url = entry.get("json_download")
+            if binary_url and entry.get("binary_download_size") is None:
+                entry["binary_download_size"] = fetch_url_size(binary_url, timeout=FETCH_REMOTE_SIZES_TIMEOUT)
+                changed = True
+            if json_url and entry.get("json_download_size") is None:
+                entry["json_download_size"] = fetch_url_size(json_url, timeout=FETCH_REMOTE_SIZES_TIMEOUT)
+                changed = True
+
+        if changed and FETCH_REMOTE_SIZES_WRITE:
+            config_out = {}
+            for key, value in dataset.items():
+                if key.startswith('_') or key in ('filename', 'bibtex'):
+                    continue
+                config_out[key] = value
+            try:
+                with open(dataset["_config_path"], "w") as handle:
+                    json.dump(config_out, handle, indent=2, ensure_ascii=True)
+                    handle.write("\n")
+            except Exception:
+                pass
+        return
+
     binary_links = dataset.get("binary_download", [])
     json_links = dataset.get("json_download", [])
     binary_sizes = list(dataset.get("binary_download_size", dataset.get("binary_download_sizes", [])) or [])
     json_sizes = list(dataset.get("json_download_size", dataset.get("json_download_sizes", [])) or [])
-
     if len(binary_sizes) < len(binary_links):
         for i in range(len(binary_links) - len(binary_sizes)):
             url = binary_links[len(binary_sizes) + i]

@@ -8,22 +8,19 @@
   ],
   "description": "Nodes represent authors. Each hyperedge represents a publication and contains the set of co-authors of that publication. This is a temporal higher-order network dataset, where each hyperedge is a publication marked with the History tag in the Microsoft Academic Graph. Timestamps are the year of publication.",
   "source": "https://www.cs.cornell.edu/~arb/data/coauth-MAG-History/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-history/coauth-history.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-history/coauth-history.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-history/coauth-history.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-history/coauth-history.json.gz",
+      "binary_download_size": 136870169,
+      "json_download_size": 117210712
+    }
   ],
   "vertices": 1034876,
   "edges": 1813147,
   "unique_edges": 896062,
   "max_size_edge": 925,
-  "binary_download_sizes": [
-    136870169
-  ],
-  "json_download_sizes": [
-    117210712
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., coauth-history).",
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",

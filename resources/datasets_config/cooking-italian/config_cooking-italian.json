@@ -6,22 +6,19 @@
   ],
   "description": "Recipe hypergraph from Italian cuisine (Italy). Nodes represent ingredients. Each hyperedge represents a recipe and contains the set of ingredients used in that recipe.",
   "source": "https://www.cs.cornell.edu/~arb/data/cat-edge-Cooking/",
-  "binary_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-italian/cooking-italian.hgx.gz"
-  ],
-  "json_download": [
-    "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-italian/cooking-italian.json.gz"
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-italian/cooking-italian.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-italian/cooking-italian.json.gz",
+      "binary_download_size": 371897,
+      "json_download_size": 162651
+    }
   ],
   "vertices": 2929,
   "edges": 7758,
   "unique_edges": 7758,
   "max_size_edge": 65,
-  "binary_download_sizes": [
-    371897
-  ],
-  "json_download_sizes": [
-    162651
-  ],
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., cooking-italian).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
