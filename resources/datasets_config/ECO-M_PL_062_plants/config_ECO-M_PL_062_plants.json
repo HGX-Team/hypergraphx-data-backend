@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ECO-M_PL_062_plants/ECO-M_PL_062_plants.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ECO-M_PL_062_plants/ECO-M_PL_062_plants.json.gz",
-      "binary_download_size": 69698,
-      "json_download_size": 40105
+      "binary_download_size": 69833,
+      "json_download_size": 40775
     }
   ],
   "vertices": 456,

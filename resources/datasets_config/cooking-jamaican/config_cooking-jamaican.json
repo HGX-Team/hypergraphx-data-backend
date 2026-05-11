@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-jamaican/cooking-jamaican.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-jamaican/cooking-jamaican.json.gz",
-      "binary_download_size": 35631,
-      "json_download_size": 19389
+      "binary_download_size": 35687,
+      "json_download_size": 19791
     }
   ],
   "vertices": 877,

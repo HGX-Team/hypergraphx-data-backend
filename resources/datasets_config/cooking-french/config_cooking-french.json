@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-french/cooking-french.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-french/cooking-french.json.gz",
-      "binary_download_size": 136815,
-      "json_download_size": 66114
+      "binary_download_size": 137096,
+      "json_download_size": 67381
     }
   ],
   "vertices": 2102,

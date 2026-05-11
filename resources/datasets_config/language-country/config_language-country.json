@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/language-country/language-country.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/language-country/language-country.json.gz",
-      "binary_download_size": 5379,
-      "json_download_size": 3354
+      "binary_download_size": 5837,
+      "json_download_size": 3383
     }
   ],
   "vertices": 234,

@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-conference-sfhh/contacts-conference-sfhh.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-conference-sfhh/contacts-conference-sfhh.json.gz",
-      "binary_download_size": 926221,
-      "json_download_size": 261780
+      "binary_download_size": 925678,
+      "json_download_size": 268848
     }
   ],
   "vertices": 403,

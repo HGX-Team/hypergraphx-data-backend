@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/mathoverflow-answers/mathoverflow-answers.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/mathoverflow-answers/mathoverflow-answers.json.gz",
-      "binary_download_size": 1319470,
-      "json_download_size": 1204429
+      "binary_download_size": 1350363,
+      "json_download_size": 1243179
     }
   ],
   "vertices": 73851,

@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/flavourcompounds/flavourcompounds.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/flavourcompounds/flavourcompounds.json.gz",
-      "binary_download_size": 91883,
-      "json_download_size": 52514
+      "binary_download_size": 91861,
+      "json_download_size": 53523
     }
   ],
   "vertices": 1107,

@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/tags-ask-ubuntu/tags-ask-ubuntu.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/tags-ask-ubuntu/tags-ask-ubuntu.json.gz",
-      "binary_download_size": 9580875,
-      "json_download_size": 4768428
+      "binary_download_size": 9584901,
+      "json_download_size": 4886729
     }
   ],
   "vertices": 3029,

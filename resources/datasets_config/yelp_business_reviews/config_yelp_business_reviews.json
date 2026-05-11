@@ -10,8 +10,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/yelp_business_reviews/yelp_business_reviews.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/yelp_business_reviews/yelp_business_reviews.json.gz",
-      "binary_download_size": 33128522,
-      "json_download_size": 16239980
+      "binary_download_size": 33264650,
+      "json_download_size": 16536495
     }
   ],
   "vertices": 50758,

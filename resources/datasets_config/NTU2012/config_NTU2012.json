@@ -10,8 +10,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NTU2012/NTU2012.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NTU2012/NTU2012.json.gz",
-      "binary_download_size": null,
-      "json_download_size": null
+      "binary_download_size": 48586,
+      "json_download_size": 21204
     }
   ],
   "vertices": 2012,

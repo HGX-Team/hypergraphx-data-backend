@@ -14,8 +14,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-dual/pokemon-moves-dual.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-dual/pokemon-moves-dual.json.gz",
-      "binary_download_size": 221241,
-      "json_download_size": 153888
+      "binary_download_size": 225429,
+      "json_download_size": 159481
     }
   ],
   "vertices": 833,

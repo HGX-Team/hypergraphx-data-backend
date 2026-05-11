@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ECO-M_PL_062_pollinators/ECO-M_PL_062_pollinators.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ECO-M_PL_062_pollinators/ECO-M_PL_062_pollinators.json.gz",
-      "binary_download_size": 65762,
-      "json_download_size": 42104
+      "binary_download_size": 65786,
+      "json_download_size": 43018
     }
   ],
   "vertices": 1044,

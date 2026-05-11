@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-mexican/cooking-mexican.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-mexican/cooking-mexican.json.gz",
-      "binary_download_size": 322165,
-      "json_download_size": 142681
+      "binary_download_size": 322890,
+      "json_download_size": 144909
     }
   ],
   "vertices": 2684,

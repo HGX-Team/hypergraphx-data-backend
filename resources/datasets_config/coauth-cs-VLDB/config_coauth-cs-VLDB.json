@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-VLDB/coauth-cs-VLDB.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-VLDB/coauth-cs-VLDB.json.gz",
-      "binary_download_size": 164901,
-      "json_download_size": 75232
+      "binary_download_size": 164944,
+      "json_download_size": 78609
     }
   ],
   "vertices": 8839,

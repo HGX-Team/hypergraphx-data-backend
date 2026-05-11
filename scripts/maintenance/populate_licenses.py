@@ -11,7 +11,7 @@ from pathlib import Path
 
 from license_rules import first_matching_rule, normalize_license_id
 
-CONFIG_DIR = Path(__file__).parent.parent / "resources" / "datasets_config"
+CONFIG_DIR = Path(__file__).resolve().parents[2] / "resources" / "datasets_config"
 
 def get_license_for_source(source_url):
     """Return license info if source URL matches a known pattern."""

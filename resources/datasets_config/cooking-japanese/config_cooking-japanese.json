@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-japanese/cooking-japanese.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-japanese/cooking-japanese.json.gz",
-      "binary_download_size": 76200,
-      "json_download_size": 38234
+      "binary_download_size": 76337,
+      "json_download_size": 38971
     }
   ],
   "vertices": 1439,

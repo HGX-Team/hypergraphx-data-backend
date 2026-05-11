@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-science-gallery/contacts-science-gallery.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-science-gallery/contacts-science-gallery.json.gz",
-      "binary_download_size": 5968357,
-      "json_download_size": 1801331
+      "binary_download_size": 5967958,
+      "json_download_size": 1881592
     }
   ],
   "vertices": 10972,

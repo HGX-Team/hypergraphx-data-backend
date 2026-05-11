@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-ICCV/coauth-cs-ICCV.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-ICCV/coauth-cs-ICCV.json.gz",
-      "binary_download_size": 198808,
-      "json_download_size": 93073
+      "binary_download_size": 198762,
+      "json_download_size": 97106
     }
   ],
   "vertices": 11691,

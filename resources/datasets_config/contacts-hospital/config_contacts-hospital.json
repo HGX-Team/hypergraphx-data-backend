@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-hospital/contacts-hospital.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-hospital/contacts-hospital.json.gz",
-      "binary_download_size": 503872,
-      "json_download_size": 137584
+      "binary_download_size": 502784,
+      "json_download_size": 145428
     }
   ],
   "vertices": 75,

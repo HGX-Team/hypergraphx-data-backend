@@ -13,8 +13,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-classes/NDC-classes.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-classes/NDC-classes.json.gz",
-      "binary_download_size": 989424,
-      "json_download_size": 647591
+      "binary_download_size": 985856,
+      "json_download_size": 647260
     }
   ],
   "vertices": 1161,

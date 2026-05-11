@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-CVPR/coauth-cs-CVPR.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-CVPR/coauth-cs-CVPR.json.gz",
-      "binary_download_size": 388236,
-      "json_download_size": 175474
+      "binary_download_size": 388909,
+      "json_download_size": 182535
     }
   ],
   "vertices": 18835,

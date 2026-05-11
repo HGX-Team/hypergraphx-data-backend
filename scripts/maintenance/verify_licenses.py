@@ -4,7 +4,7 @@ Verify dataset config licensing fields for internal consistency.
 
 This is a best-effort validator:
 - It checks that `license` and `license_url` are consistent and supported by the site.
-- It compares configs against URL-based inference rules (see `scripts/license_rules.py`).
+- It compares configs against URL-based inference rules (see `scripts/maintenance/license_rules.py`).
 
 It does NOT automatically assert the upstream license terms unless you opt into
 fetching remote pages (which may be unavailable in restricted environments).
@@ -23,7 +23,7 @@ from typing import Iterable, Optional
 from license_rules import first_matching_rule, normalize_license_id
 
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG_DIR = REPO_ROOT / "resources" / "datasets_config"
 GENERATE_PAGES_SCRIPT = REPO_ROOT / "scripts" / "generate_pages.py"
 

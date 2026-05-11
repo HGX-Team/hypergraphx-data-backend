@@ -10,8 +10,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cora/cora.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cora/cora.json.gz",
-      "binary_download_size": 123879,
-      "json_download_size": 107146
+      "binary_download_size": 124755,
+      "json_download_size": 111734
     }
   ],
   "vertices": 2708,

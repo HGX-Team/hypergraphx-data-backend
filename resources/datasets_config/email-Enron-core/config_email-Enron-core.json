@@ -13,8 +13,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/email-Enron-core/email-Enron-core.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/email-Enron-core/email-Enron-core.json.gz",
-      "binary_download_size": 252685,
-      "json_download_size": 70425
+      "binary_download_size": 252378,
+      "json_download_size": 78117
     }
   ],
   "vertices": 143,

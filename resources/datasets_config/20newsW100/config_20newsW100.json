@@ -10,8 +10,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/20newsW100/20newsW100.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/20newsW100/20newsW100.json.gz",
-      "binary_download_size": 247076,
-      "json_download_size": 180421
+      "binary_download_size": 246154,
+      "json_download_size": 183403
     }
   ],
   "vertices": 16242,

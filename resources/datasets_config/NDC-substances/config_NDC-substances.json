@@ -13,8 +13,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-substances/NDC-substances.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-substances/NDC-substances.json.gz",
-      "binary_download_size": 2989431,
-      "json_download_size": 1860019
+      "binary_download_size": 3019834,
+      "json_download_size": 1916839
     }
   ],
   "vertices": 5556,

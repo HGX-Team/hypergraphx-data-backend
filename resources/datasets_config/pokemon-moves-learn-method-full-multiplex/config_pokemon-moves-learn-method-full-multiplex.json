@@ -14,8 +14,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-learn-method-full-multiplex/pokemon-moves-learn-method-full-multiplex.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-learn-method-full-multiplex/pokemon-moves-learn-method-full-multiplex.json.gz",
-      "binary_download_size": 285494,
-      "json_download_size": 195749
+      "binary_download_size": 287405,
+      "json_download_size": 203720
     }
   ],
   "vertices": 1328,

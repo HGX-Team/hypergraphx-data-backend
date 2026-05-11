@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-chinese/cooking-chinese.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-chinese/cooking-chinese.json.gz",
-      "binary_download_size": 144492,
-      "json_download_size": 68197
+      "binary_download_size": 144970,
+      "json_download_size": 69467
     }
   ],
   "vertices": 1792,

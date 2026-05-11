@@ -12,7 +12,7 @@ from pathlib import Path
 from hypergraphx.readwrite import load_hypergraph
 
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_DATA_DIR = REPO_ROOT / "data"
 DEFAULT_REPORT = REPO_ROOT / "reports" / "local_dataset_loads.json"
 

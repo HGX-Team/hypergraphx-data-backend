@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-workplace/contacts-workplace.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-workplace/contacts-workplace.json.gz",
-      "binary_download_size": 188454,
-      "json_download_size": 58741
+      "binary_download_size": 188392,
+      "json_download_size": 62938
     }
   ],
   "vertices": 92,

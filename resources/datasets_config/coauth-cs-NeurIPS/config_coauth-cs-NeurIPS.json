@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-NeurIPS/coauth-cs-NeurIPS.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-NeurIPS/coauth-cs-NeurIPS.json.gz",
-      "binary_download_size": 246473,
-      "json_download_size": 110099
+      "binary_download_size": 246507,
+      "json_download_size": 114391
     }
   ],
   "vertices": 12306,

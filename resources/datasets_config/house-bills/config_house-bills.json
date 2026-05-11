@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-bills/house-bills.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-bills/house-bills.json.gz",
-      "binary_download_size": 3990429,
-      "json_download_size": 1460540
+      "binary_download_size": 4001494,
+      "json_download_size": 1519050
     }
   ],
   "vertices": 1494,

@@ -13,8 +13,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-DBLP/coauth-DBLP.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-DBLP/coauth-DBLP.json.gz",
-      "binary_download_size": 121251017,
-      "json_download_size": 60936556
+      "binary_download_size": 121957856,
+      "json_download_size": 64490210
     }
   ],
   "vertices": 1930378,

@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mid1/Mid1.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Mid1/Mid1.json.gz",
-      "binary_download_size": 8700396,
-      "json_download_size": 2171856
+      "binary_download_size": 8722161,
+      "json_download_size": 2333563
     }
   ],
   "vertices": 591,

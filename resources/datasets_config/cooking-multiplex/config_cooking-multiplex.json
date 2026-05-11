@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-multiplex/cooking-multiplex.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-multiplex/cooking-multiplex.json.gz",
-      "binary_download_size": 2134527,
-      "json_download_size": 890479
+      "binary_download_size": 2122915,
+      "json_download_size": 910851
     }
   ],
   "vertices": 6714,

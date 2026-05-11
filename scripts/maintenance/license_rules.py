@@ -2,8 +2,8 @@
 Shared license inference rules for dataset configs.
 
 These rules support:
-- `scripts/populate_licenses.py`: infer license fields from the config `source`.
-- `scripts/verify_licenses.py`: validate config license fields for consistency.
+- `scripts/maintenance/populate_licenses.py`: infer license fields from the config `source`.
+- `scripts/maintenance/verify_licenses.py`: validate config license fields for consistency.
 """
 
 from __future__ import annotations

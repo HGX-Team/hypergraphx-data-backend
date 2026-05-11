@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/walmart-trips/walmart-trips.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/walmart-trips/walmart-trips.json.gz",
-      "binary_download_size": 3186956,
-      "json_download_size": 1522661
+      "binary_download_size": 3192883,
+      "json_download_size": 1584427
     }
   ],
   "vertices": 88860,

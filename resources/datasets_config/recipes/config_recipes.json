@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/recipes/recipes.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/recipes/recipes.json.gz",
-      "binary_download_size": 2093701,
-      "json_download_size": 636801
+      "binary_download_size": 2101099,
+      "json_download_size": 646226
     }
   ],
   "vertices": 381,

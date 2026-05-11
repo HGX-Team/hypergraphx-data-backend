@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-british/cooking-british.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-british/cooking-british.json.gz",
-      "binary_download_size": 48363,
-      "json_download_size": 25911
+      "binary_download_size": 48478,
+      "json_download_size": 26423
     }
   ],
   "vertices": 1166,

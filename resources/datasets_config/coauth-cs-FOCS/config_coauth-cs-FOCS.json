@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-FOCS/coauth-cs-FOCS.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-FOCS/coauth-cs-FOCS.json.gz",
-      "binary_download_size": 77689,
-      "json_download_size": 33777
+      "binary_download_size": 77651,
+      "json_download_size": 35177
     }
   ],
   "vertices": 3758,

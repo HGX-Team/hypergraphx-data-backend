@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-cajun_creole/cooking-cajun_creole.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-cajun_creole/cooking-cajun_creole.json.gz",
-      "binary_download_size": 94765,
-      "json_download_size": 47687
+      "binary_download_size": 95074,
+      "json_download_size": 48627
     }
   ],
   "vertices": 1576,

@@ -14,8 +14,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves/pokemon-moves.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves/pokemon-moves.json.gz",
-      "binary_download_size": 195634,
-      "json_download_size": 143061
+      "binary_download_size": 197318,
+      "json_download_size": 149604
     }
   ],
   "vertices": 1328,

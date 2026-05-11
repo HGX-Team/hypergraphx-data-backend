@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/amazon-reviews/amazon-reviews.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/amazon-reviews/amazon-reviews.json.gz",
-      "binary_download_size": 541414821,
-      "json_download_size": 281350133
+      "binary_download_size": 543210393,
+      "json_download_size": 283168546
     }
   ],
   "vertices": 2268231,

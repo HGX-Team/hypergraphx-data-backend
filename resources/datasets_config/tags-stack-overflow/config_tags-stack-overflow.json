@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/tags-stack-overflow/tags-stack-overflow.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/tags-stack-overflow/tags-stack-overflow.json.gz",
-      "binary_download_size": 476076666,
-      "json_download_size": 215400296
+      "binary_download_size": 474489798,
+      "json_download_size": 220519954
     }
   ],
   "vertices": 49998,

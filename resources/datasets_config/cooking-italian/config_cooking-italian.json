@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-italian/cooking-italian.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-italian/cooking-italian.json.gz",
-      "binary_download_size": 371897,
-      "json_download_size": 162651
+      "binary_download_size": 372884,
+      "json_download_size": 165511
     }
   ],
   "vertices": 2929,

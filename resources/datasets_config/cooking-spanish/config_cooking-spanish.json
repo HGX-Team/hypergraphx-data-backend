@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-spanish/cooking-spanish.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-spanish/cooking-spanish.json.gz",
-      "binary_download_size": 59183,
-      "json_download_size": 31224
+      "binary_download_size": 59375,
+      "json_download_size": 31885
     }
   ],
   "vertices": 1263,

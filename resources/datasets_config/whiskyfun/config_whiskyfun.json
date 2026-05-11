@@ -10,8 +10,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/whiskyfun/whiskyfun.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/whiskyfun/whiskyfun.json.gz",
-      "binary_download_size": 8697,
-      "json_download_size": 4816
+      "binary_download_size": 8736,
+      "json_download_size": 4925
     }
   ],
   "vertices": 208,

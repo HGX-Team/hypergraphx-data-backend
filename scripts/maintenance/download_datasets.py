@@ -15,7 +15,7 @@ from urllib.error import HTTPError
 from urllib.request import urlopen
 
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG_DIR = REPO_ROOT / "resources" / "datasets_config"
 DEFAULT_DATA_DIR = REPO_ROOT / "data"
 

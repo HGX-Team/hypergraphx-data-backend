@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-conference-hypertext/contacts-conference-hypertext.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-conference-hypertext/contacts-conference-hypertext.json.gz",
-      "binary_download_size": 338250,
-      "json_download_size": 96760
+      "binary_download_size": 337949,
+      "json_download_size": 101619
     }
   ],
   "vertices": 113,

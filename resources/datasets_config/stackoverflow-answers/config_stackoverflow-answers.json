@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/stackoverflow-answers/stackoverflow-answers.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/stackoverflow-answers/stackoverflow-answers.json.gz",
-      "binary_download_size": null,
-      "json_download_size": null
+      "binary_download_size": 346038310,
+      "json_download_size": 312005255
     }
   ],
   "vertices": 15211989,

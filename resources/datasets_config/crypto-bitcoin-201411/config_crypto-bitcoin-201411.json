@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/crypto-bitcoin-201411/crypto-bitcoin-201411.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/crypto-bitcoin-201411/crypto-bitcoin-201411.json.gz",
-      "binary_download_size": 144334383,
-      "json_download_size": 109600466
+      "binary_download_size": 144513092,
+      "json_download_size": 111317238
     }
   ],
   "vertices": 2511247,

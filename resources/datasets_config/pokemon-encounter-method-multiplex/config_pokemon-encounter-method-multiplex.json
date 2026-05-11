@@ -15,8 +15,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-encounter-method-multiplex/pokemon-encounter-method-multiplex.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-encounter-method-multiplex/pokemon-encounter-method-multiplex.json.gz",
-      "binary_download_size": 111711,
-      "json_download_size": 86499
+      "binary_download_size": 112372,
+      "json_download_size": 91209
     }
   ],
   "vertices": 1328,

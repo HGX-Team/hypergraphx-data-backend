@@ -13,8 +13,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-multiplex/coauth-cs-multiplex.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-multiplex/coauth-cs-multiplex.json.gz",
-      "binary_download_size": 1890875,
-      "json_download_size": 836710
+      "binary_download_size": 1900171,
+      "json_download_size": 885587
     }
   ],
   "vertices": 80198,

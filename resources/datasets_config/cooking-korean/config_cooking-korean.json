@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-korean/cooking-korean.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-korean/cooking-korean.json.gz",
-      "binary_download_size": 47394,
-      "json_download_size": 23557
+      "binary_download_size": 47493,
+      "json_download_size": 24018
     }
   ],
   "vertices": 898,

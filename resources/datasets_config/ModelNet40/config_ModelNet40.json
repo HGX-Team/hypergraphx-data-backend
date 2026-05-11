@@ -10,8 +10,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ModelNet40/ModelNet40.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/ModelNet40/ModelNet40.json.gz",
-      "binary_download_size": 359577,
-      "json_download_size": 159395
+      "binary_download_size": 358645,
+      "json_download_size": 170341
     }
   ],
   "vertices": 12311,

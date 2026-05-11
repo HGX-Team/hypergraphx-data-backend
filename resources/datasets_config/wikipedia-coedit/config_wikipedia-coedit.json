@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/wikipedia-coedit/wikipedia-coedit.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/wikipedia-coedit/wikipedia-coedit.json.gz",
-      "binary_download_size": 124688,
-      "json_download_size": 86814
+      "binary_download_size": 124125,
+      "json_download_size": 89577
     }
   ],
   "vertices": 8211,

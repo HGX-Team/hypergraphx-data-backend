@@ -13,8 +13,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-geology/coauth-geology.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-geology/coauth-geology.json.gz",
-      "binary_download_size": 139325380,
-      "json_download_size": 115243511
+      "binary_download_size": 140243334,
+      "json_download_size": 117764324
     }
   ],
   "vertices": 1261129,

@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-thai/cooking-thai.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-thai/cooking-thai.json.gz",
-      "binary_download_size": 91942,
-      "json_download_size": 45474
+      "binary_download_size": 92259,
+      "json_download_size": 46277
     }
   ],
   "vertices": 1376,

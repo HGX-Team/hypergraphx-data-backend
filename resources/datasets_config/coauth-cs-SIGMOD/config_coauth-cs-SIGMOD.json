@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-SIGMOD/coauth-cs-SIGMOD.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-cs-SIGMOD/coauth-cs-SIGMOD.json.gz",
-      "binary_download_size": 159650,
-      "json_download_size": 74154
+      "binary_download_size": 159906,
+      "json_download_size": 77416
     }
   ],
   "vertices": 8755,

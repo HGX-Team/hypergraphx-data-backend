@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-primary-school/contacts-primary-school.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-primary-school/contacts-primary-school.json.gz",
-      "binary_download_size": 1791551,
-      "json_download_size": 517792
+      "binary_download_size": 1789932,
+      "json_download_size": 536978
     }
   ],
   "vertices": 242,

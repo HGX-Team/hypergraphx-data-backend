@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-committees/house-committees.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/house-committees/house-committees.json.gz",
-      "binary_download_size": 46197,
-      "json_download_size": 28892
+      "binary_download_size": 46405,
+      "json_download_size": 29779
     }
   ],
   "vertices": 1290,

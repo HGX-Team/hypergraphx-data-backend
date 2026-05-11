@@ -13,8 +13,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/email-EU/email-EU.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/email-EU/email-EU.json.gz",
-      "binary_download_size": 5533608,
-      "json_download_size": 2388626
+      "binary_download_size": 5518183,
+      "json_download_size": 2557393
     }
   ],
   "vertices": 1005,

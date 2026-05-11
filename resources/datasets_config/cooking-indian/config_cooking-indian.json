@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-indian/cooking-indian.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-indian/cooking-indian.json.gz",
-      "binary_download_size": 163302,
-      "json_download_size": 74895
+      "binary_download_size": 163715,
+      "json_download_size": 76155
     }
   ],
   "vertices": 1664,

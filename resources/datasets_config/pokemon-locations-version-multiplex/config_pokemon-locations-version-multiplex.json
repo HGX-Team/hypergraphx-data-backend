@@ -15,8 +15,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-locations-version-multiplex/pokemon-locations-version-multiplex.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-locations-version-multiplex/pokemon-locations-version-multiplex.json.gz",
-      "binary_download_size": 159053,
-      "json_download_size": 111982
+      "binary_download_size": 159955,
+      "json_download_size": 118195
     }
   ],
   "vertices": 1328,

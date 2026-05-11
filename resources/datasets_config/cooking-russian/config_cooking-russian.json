@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-russian/cooking-russian.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-russian/cooking-russian.json.gz",
-      "binary_download_size": 32359,
-      "json_download_size": 17825
+      "binary_download_size": 32320,
+      "json_download_size": 18216
     }
   ],
   "vertices": 872,

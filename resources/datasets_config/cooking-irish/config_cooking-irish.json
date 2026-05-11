@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-irish/cooking-irish.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-irish/cooking-irish.json.gz",
-      "binary_download_size": 39586,
-      "json_download_size": 21321
+      "binary_download_size": 39620,
+      "json_download_size": 21774
     }
   ],
   "vertices": 999,

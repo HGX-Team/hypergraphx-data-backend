@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-filipino/cooking-filipino.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-filipino/cooking-filipino.json.gz",
-      "binary_download_size": 42856,
-      "json_download_size": 22198
+      "binary_download_size": 42954,
+      "json_download_size": 22681
     }
   ],
   "vertices": 947,

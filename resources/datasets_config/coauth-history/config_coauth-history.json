@@ -13,8 +13,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-history/coauth-history.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/coauth-history/coauth-history.json.gz",
-      "binary_download_size": 136870169,
-      "json_download_size": 117210712
+      "binary_download_size": 137709977,
+      "json_download_size": 119703054
     }
   ],
   "vertices": 1034876,

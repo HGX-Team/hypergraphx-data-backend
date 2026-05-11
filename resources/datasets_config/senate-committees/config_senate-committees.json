@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/senate-committees/senate-committees.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/senate-committees/senate-committees.json.gz",
-      "binary_download_size": 18331,
-      "json_download_size": 8600
+      "binary_download_size": 18343,
+      "json_download_size": 8861
     }
   ],
   "vertices": 282,

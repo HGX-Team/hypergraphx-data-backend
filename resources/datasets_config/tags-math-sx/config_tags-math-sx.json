@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/tags-math-sx/tags-math-sx.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/tags-math-sx/tags-math-sx.json.gz",
-      "binary_download_size": 26161922,
-      "json_download_size": 12921991
+      "binary_download_size": 26163161,
+      "json_download_size": 13244077
     }
   ],
   "vertices": 1629,

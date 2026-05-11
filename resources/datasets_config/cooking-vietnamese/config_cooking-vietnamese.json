@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-vietnamese/cooking-vietnamese.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-vietnamese/cooking-vietnamese.json.gz",
-      "binary_download_size": 53650,
-      "json_download_size": 28455
+      "binary_download_size": 53760,
+      "json_download_size": 29010
     }
   ],
   "vertices": 1108,

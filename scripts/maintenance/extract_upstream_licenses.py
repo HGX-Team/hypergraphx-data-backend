@@ -29,7 +29,7 @@ from typing import Iterable, Optional
 from urllib.parse import urlparse, urljoin, parse_qs, urlencode
 
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_DIR = REPO_ROOT / "resources" / "datasets_config"
 REPRO_DIR = REPO_ROOT / "reproducibility"
 

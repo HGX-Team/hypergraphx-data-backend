@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-moroccan/cooking-moroccan.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-moroccan/cooking-moroccan.json.gz",
-      "binary_download_size": 51677,
-      "json_download_size": 26579
+      "binary_download_size": 51778,
+      "json_download_size": 27115
     }
   ],
   "vertices": 974,

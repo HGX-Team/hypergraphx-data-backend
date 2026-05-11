@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-greek/cooking-greek.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-greek/cooking-greek.json.gz",
-      "binary_download_size": 65196,
-      "json_download_size": 32643
+      "binary_download_size": 65368,
+      "json_download_size": 33279
     }
   ],
   "vertices": 1198,

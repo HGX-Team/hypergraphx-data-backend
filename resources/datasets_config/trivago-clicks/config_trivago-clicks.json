@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/trivago-clicks/trivago-clicks.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/trivago-clicks/trivago-clicks.json.gz",
-      "binary_download_size": 7604786,
-      "json_download_size": 3451531
+      "binary_download_size": 7734132,
+      "json_download_size": 3567822
     }
   ],
   "vertices": 172738,

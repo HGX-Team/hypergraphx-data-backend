@@ -14,8 +14,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-version-group-multiplex/pokemon-moves-version-group-multiplex.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-moves-version-group-multiplex/pokemon-moves-version-group-multiplex.json.gz",
-      "binary_download_size": 1139359,
-      "json_download_size": 627608
+      "binary_download_size": 1144804,
+      "json_download_size": 648880
     }
   ],
   "vertices": 1328,

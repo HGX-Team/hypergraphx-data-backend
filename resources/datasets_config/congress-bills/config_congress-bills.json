@@ -12,8 +12,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/congress-bills/congress-bills.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/congress-bills/congress-bills.json.gz",
-      "binary_download_size": 9731581,
-      "json_download_size": 3536381
+      "binary_download_size": 9748012,
+      "json_download_size": 3708635
     }
   ],
   "vertices": 1718,

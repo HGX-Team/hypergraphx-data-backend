@@ -15,8 +15,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-locations-dual/pokemon-locations-dual.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/pokemon-locations-dual/pokemon-locations-dual.json.gz",
-      "binary_download_size": 67028,
-      "json_download_size": 53940
+      "binary_download_size": 67923,
+      "json_download_size": 56866
     }
   ],
   "vertices": 884,

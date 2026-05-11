@@ -341,6 +341,7 @@ LICENSE_BADGES = {
     "CC-BY-NC-SA-3.0": ("CC BY-NC-SA 3.0", "bg-warning text-dark"),
     "CC-BY-NC-SA-4.0": ("CC BY-NC-SA 4.0", "bg-warning text-dark"),
     "MIT": ("MIT", "bg-success"),
+    "BSD-3-Clause": ("BSD 3-Clause", "bg-success"),
     "GPL-3.0": ("GPL 3.0", "bg-info text-dark"),
     "GPL-3.0-only": ("GPL 3.0 (only)", "bg-info text-dark"),
     "Apache-2.0": ("Apache 2.0", "bg-success"),

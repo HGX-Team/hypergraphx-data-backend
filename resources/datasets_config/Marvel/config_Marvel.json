@@ -10,8 +10,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Marvel/Marvel.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/Marvel/Marvel.json.gz",
-      "binary_download_size": 482796,
-      "json_download_size": 414870
+      "binary_download_size": 476290,
+      "json_download_size": 245254
     }
   ],
   "vertices": 6439,
@@ -19,10 +19,13 @@
   "unique_edges": 10222,
   "max_size_edge": 111,
   "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., Marvel).",
     "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false)."
   },
   "nodes_metadata": {
+    "character_name": "(STRING) Comic book character name from the source data (e.g., MACHINE MAN/X-51).",
     "Alignment": "(STRING) Character moral alignment (e.g., Good).",
     "Alive": "(STRING) Whether the character is currently alive (e.g., Yes).",
     "Appearances": "(INT) Number of comic book appearances (e.g., 146).",

@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-southern_us/cooking-southern_us.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/cooking-southern_us/cooking-southern_us.json.gz",
-      "binary_download_size": 207569,
-      "json_download_size": 94494
+      "binary_download_size": 208180,
+      "json_download_size": 96352
     }
   ],
   "vertices": 2462,
