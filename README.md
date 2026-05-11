@@ -1,22 +1,26 @@
-# Hypergraphx-data site
+# Hypergraphx-data backend
 
-This repository contains datasets and a static website that documents and links them.
+This repository is the source of truth for the Hypergraphx-data dataset catalog.
+It contains dataset metadata, reproducibility material, static-site templates, and
+the build/deploy scripts that publish the generated GitHub Pages website.
 
 ## What lives here
 - `resources/datasets_config/`: dataset configs (`config_<name>.json`) and optional `<name>.bib` files.
 - `resources/datasets_statistics/`: compact per-dataset chart distributions (`distributions.json`).
 - `reproducibility/`: per-dataset reproducibility guides and script references.
 - `site_config.json`: site configuration (set `github_repo_url_base` to link reproducibility pages to GitHub).
-- `dist/index.html`, `dist/about.html`, `dist/statistics.html`: built site entry pages.
-- `dist/datasets/*.html`: built dataset pages.
-- `dist/static/`: built static assets (CSS/JS/images).
+- `dist/`: local generated site output (ignored by git).
 - `templates/`: HTML templates used to build the site.
 - `static/`: source static assets used by the site (CSS, JS, images, figures).
 - `scripts/`: build helpers for site generation.
+- `scripts/maintenance/`: optional local maintenance, audit, download, compression, and verification tools.
 - `data/`: local raw datasets (ignored; may be a symlink to a remote server mount).
 
 ## Deployment / build steps
 Prereqs: Python 3.12 and dependencies from `environment.yml` (Conda recommended).
+The Conda environment includes the full build toolchain, including `hypergraphx`
+and `matplotlib`. `requirements.txt` is a lighter pip dependency list and does
+not include every dependency needed by the dataset conversion/verification tools.
 
 From the repo root:
 
@@ -30,11 +34,13 @@ This runs, in order:
 3) `scripts/generate_pages.py` to generate `dist/index.html`, `dist/static/js/related-data.js`, and `dist/datasets/*.html`.
 
 The build also copies static root templates such as `templates/about_template.html` to their published filenames in `dist/`.
+Note that `make build` is not strictly read-only: `populate_with_links.py` can
+update dataset config files if download links are missing.
 
 - To add or refresh distribution charts for one dataset, generate the compact chart payload from the local dataset file:
 
 ```bash
-/Users/francesco/hgx-dev/hgx-installation/bin/python scripts/generate_dataset_distributions.py <dataset> --overwrite
+python3 scripts/generate_dataset_distributions.py <dataset> --overwrite
 ```
 
 Use `--prefer json` if the JSON file should be treated as the source instead of the HGX file.
@@ -47,13 +53,19 @@ Notes:
 
 ## Publishing
 This backend repository publishes the generated site to the public GitHub Pages repository `HGX-Team/hypergraphx-data`.
-The Pages repository receives the built static files plus the public `reproducibility/` directory.
+The Pages repository is generated output, while this backend repository is the
+source of truth. The Pages repository receives the built static files plus the
+public `reproducibility/` directory.
 
 First clone the Pages repository next to this backend repository:
 
 ```bash
 git clone git@github.com:HGX-Team/hypergraphx-data.git ../hypergraphx-data
 ```
+
+Before deploying, make sure this backend checkout contains exactly the changes
+you want to publish. `deploy_pages.sh` checks whether the Pages checkout is
+dirty, but it builds from the current backend working tree.
 
 Then deploy:
 
