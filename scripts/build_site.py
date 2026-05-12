@@ -37,16 +37,25 @@ def ensure_pages_settings() -> None:
 
 def ensure_pages_repo_gitignore() -> None:
     gitignore = DIST_DIR / ".gitignore"
-    entry = ".DS_Store"
+    entries = [
+        ".DS_Store",
+        "__pycache__/",
+        "*.py[cod]",
+        ".pytest_cache/",
+        ".mypy_cache/",
+        ".ruff_cache/",
+    ]
 
     if not gitignore.exists():
-        gitignore.write_text(f"{entry}\n", encoding="utf-8")
+        gitignore.write_text("\n".join(entries) + "\n", encoding="utf-8")
         return
 
     existing = gitignore.read_text(encoding="utf-8")
-    if entry not in existing.splitlines():
+    lines = existing.splitlines()
+    missing = [entry for entry in entries if entry not in lines]
+    if missing:
         suffix = "" if existing.endswith("\n") or existing == "" else "\n"
-        gitignore.write_text(f"{existing}{suffix}{entry}\n", encoding="utf-8")
+        gitignore.write_text(f"{existing}{suffix}" + "\n".join(missing) + "\n", encoding="utf-8")
 
 
 def main() -> None:
