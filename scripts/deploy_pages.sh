@@ -89,8 +89,14 @@ trap cleanup EXIT
 
 SITE_DIST_DIR="$BUILD_DIR" python3 scripts/build_site.py
 
-rsync -a --delete --exclude '.git/' "$BUILD_DIR"/ "$PAGES_DIR"/
-rsync -a --delete reproducibility/ "$PAGES_DIR/reproducibility"/
+rsync -a --delete \
+  --exclude '.git/' \
+  --exclude 'README.md' \
+  "$BUILD_DIR"/ "$PAGES_DIR"/
+rsync -a --delete \
+  --exclude '__pycache__/' \
+  --exclude '*.pyc' \
+  reproducibility/ "$PAGES_DIR/reproducibility"/
 
 git -C "$PAGES_DIR" status --short
 
