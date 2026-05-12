@@ -1,0 +1,50 @@
+{
+  "name": "movies-cast-family",
+  "tags": [
+    "Undirected",
+    "Weighted",
+    "Movies",
+    "Culture"
+  ],
+  "description": "Movie-cast hypergraph for the Family genre, built from The Movies Dataset. Nodes are actors and hyperedges are normalized movie casts. Movies with multiple genres also appear in the corresponding other genre-specific datasets.",
+  "created_at": "2026-05-12",
+  "updated_at": "2026-05-12",
+  "source": "https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/movies-cast-family/movies-cast-family.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/movies-cast-family/movies-cast-family.json.gz",
+      "binary_download_size": 674273,
+      "json_download_size": 570008
+    }
+  ],
+  "vertices": 23407,
+  "edges": 2658,
+  "unique_edges": 2658,
+  "max_size_edge": 312,
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., movies-cast-family).",
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether repeated movie casts in this genre are stored as edge weights (e.g., true).",
+    "genre": "(STRING) Movie genre used to build this dataset (e.g., Family).",
+    "node_type": "(STRING) Semantic type of nodes (e.g., actor).",
+    "edge_type": "(STRING) Semantic type of hyperedges (e.g., movie_cast)."
+  },
+  "nodes_metadata": {
+    "tmdb_person_id": "(INT) TMDB person identifier for the actor (e.g., 31).",
+    "name": "(STRING) Actor name from credits.csv (e.g., Tom Hanks).",
+    "gender": "(INT) TMDB gender code for the actor; 0=unknown/not specified, 1=female, 2=male (e.g., 2)."
+  },
+  "edges_metadata": {
+    "movie_ids": "(LIST[STRING]) TMDB movie identifiers represented by this normalized cast hyperedge (e.g., [862]).",
+    "titles": "(LIST[STRING]) Movie titles represented by this normalized cast hyperedge (e.g., [Toy Story]).",
+    "original_languages": "(LIST[STRING]) Original language codes for the represented movies (e.g., [en]).",
+    "release_years": "(LIST[INT]) Release years for represented movies when available (e.g., [1995]).",
+    "weight": "(INT) Number of movies collapsed into this normalized cast hyperedge."
+  },
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "license_note": "Data derived from The Movies Dataset on Kaggle using movies_metadata.csv and credits.csv. The Kaggle dataset is listed as CC0: Public Domain; the movie details and credits were collected from the TMDB Open API. This product uses TMDB data but is not endorsed or certified by TMDB."
+}

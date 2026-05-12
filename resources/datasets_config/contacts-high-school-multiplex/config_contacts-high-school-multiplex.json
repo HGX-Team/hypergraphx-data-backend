@@ -1,0 +1,48 @@
+{
+  "name": "contacts-high-school-multiplex",
+  "tags": [
+    "Undirected",
+    "Multiplex",
+    "Social"
+  ],
+  "description": "Multiplex version of the Marseilles high-school contact dataset, rebuilt from the existing contacts-high-school catalog export. Nodes represent students, hyperedges represent clique-promoted face-to-face contact groups, and layers correspond to the five observed school days.",
+  "created_at": "2026-05-12",
+  "updated_at": "2026-05-12",
+  "source": "http://www.sociopatterns.org/datasets/high-school-contact-and-friendship-networks/",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-high-school-multiplex/contacts-high-school-multiplex.hgx.gz",
+      "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/contacts-high-school-multiplex/contacts-high-school-multiplex.json.gz",
+      "binary_download_size": 242531,
+      "json_download_size": 67303
+    }
+  ],
+  "vertices": 327,
+  "edges": 13068,
+  "unique_edges": 13068,
+  "max_size_edge": 5,
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., contacts-high-school-multiplex).",
+    "type": "(STRING) Hypergraph type (e.g., MultiplexHypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., false).",
+    "node_type": "(STRING) Semantic type of nodes (e.g., student).",
+    "edge_type": "(STRING) Semantic type of hyperedges (e.g., contact_clique).",
+    "layer_type": "(STRING) Semantic type of multiplex layers (e.g., school_day)."
+  },
+  "nodes_metadata": {
+    "id": "(INT) Unique identifier for the student (e.g., 454).",
+    "class": "(STRING) Student class identifier (e.g., MP).",
+    "sex": "(STRING) Student sex (M=male, F=female, Unknown) (e.g., F).",
+    "has_facebook": "(BOOL) Whether the student has a Facebook account (e.g., true).",
+    "facebook_friends": "(LIST[INT]) List of student IDs who are Facebook friends (e.g., [34, 151, 156]).",
+    "has_compiled_questionnaire": "(BOOL) Whether the student completed the friendship questionnaire (e.g., false).",
+    "questionnaire_friends": "(LIST[INT]) List of student IDs reported as friends in the questionnaire (e.g., [205, 272, 494])."
+  },
+  "edges_metadata": {
+    "layer": "(STRING) School-day layer assigned from the contact timeline (e.g., Mon)."
+  },
+  "license": "CC-BY-NC-SA-3.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+}

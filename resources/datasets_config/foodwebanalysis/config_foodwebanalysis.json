@@ -4,19 +4,33 @@
     "Undirected",
     "Biology"
   ],
-  "description": "The data is collected from the Florida bay foodweb. The bifans of the network is extracted to build submodular hyperedges. Node labels/classes indicate whether the corresponding species is a producer, an invertebrate or a vertebrate (fish, birds or large animals).",
+  "description": "The data is collected from the Florida Bay food web. Bifan motifs in the original directed carbon-flow network are converted into submodular hyperedges. Available node labels/classes indicate whether a food-web compartment is a producer, a low-level consumer, or a high-level consumer.",
   "source": "https://sites.google.com/view/panli-purdue/datasets/foodweb?authuser=0",
   "versions": [
     {
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/foodwebanalysis/foodwebanalysis.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/foodwebanalysis/foodwebanalysis.json.gz",
-      "binary_download_size": null,
-      "json_download_size": null
+      "binary_download_size": 2388774,
+      "json_download_size": 410332
     }
   ],
   "vertices": 128,
   "edges": 127497,
   "unique_edges": 127497,
-  "max_size_edge": 4
+  "max_size_edge": 4,
+  "hypergraph_metadata": {
+    "name": "(STRING) Dataset name (e.g., foodwebanalysis).",
+    "type": "(STRING) Hypergraph type (e.g., Hypergraph).",
+    "version": "(STRING) Dataset version (e.g., 1.0.0).",
+    "weighted": "(BOOL) Whether repeated bifan hyperedges are stored as edge weights (e.g., true)."
+  },
+  "nodes_metadata": {
+    "species": "(STRING) Species, taxon, or food-web compartment name from Florida-bay-meta.csv (e.g., Thalassia).",
+    "label": "(INT) Source trophic class code: 1=producer, 2=low-level consumer, 3=high-level consumer; blank when absent.",
+    "trophic_class": "(STRING) Human-readable trophic class derived from label (e.g., producer)."
+  },
+  "edges_metadata": {
+    "weight": "(INT) Number of duplicate bifan rows collapsed into this normalized 4-species hyperedge."
+  }
 }
