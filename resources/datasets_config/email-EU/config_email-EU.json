@@ -29,8 +29,8 @@
   },
   "nodes_metadata": {},
   "edges_metadata": {
-    "original_timestamp": "(INT) Email exchange original time (e.g., 1064021027).",
-    "time": "(INT) Email exchange time (e.g., 0).",
-    "weight": "(INT) Email exchange weight (e.g., 1)."
+    "original_timestamp": "(INT) Raw email timestamp from the source data, recorded at one-second resolution (e.g., 1064021027).",
+    "time": "(INT) Normalized email timestamp, equal to original_timestamp minus the first raw timestamp in the dataset (e.g., 0).",
+    "weight": "(INT) Number of email records collapsed into this sender/recipient set at the same timestamp (e.g., 1)."
   }
 }

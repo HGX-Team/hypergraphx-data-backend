@@ -13,14 +13,14 @@
       "version": "1.0.0",
       "binary_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-classes/NDC-classes.hgx.gz",
       "json_download": "https://cricca.disi.unitn.it/datasets/hypergraphx-data/NDC-classes/NDC-classes.json.gz",
-      "binary_download_size": 985856,
-      "json_download_size": 647260
+      "binary_download_size": 752078,
+      "json_download_size": 534390
     }
   ],
   "vertices": 1161,
-  "edges": 49726,
-  "unique_edges": 1090,
-  "max_size_edge": 39,
+  "edges": 19160,
+  "unique_edges": 1088,
+  "max_size_edge": 24,
   "hypergraph_metadata": {
     "name": "(STRING) Dataset name (e.g., NDC-classes).",
     "type": "(STRING) Hypergraph type (e.g., TemporalHypergraph).",
@@ -28,12 +28,12 @@
     "weighted": "(BOOL) Whether the hypergraph is weighted (e.g., true)."
   },
   "nodes_metadata": {
-    "substance_name": "(STRING) Drug substance name or pharmacological class (e.g., radioactive diagnostic agent [epc])."
+    "class_label": "(STRING) Drug class label assigned in the NDC Directory (e.g., radioactive diagnostic agent [epc])."
   },
   "edges_metadata": {
-    "label": "(LIST[STRING]) A drug label (e.g., [amyvid (0002-1200)]).",
-    "original_timestamp": "(INT) A drug original time (e.g., 63474192000000).",
-    "time": "(INT) A drug time (e.g., 3547497600000).",
-    "weight": "(INT) A drug weight (e.g., 1)."
+    "drug_labels": "(LIST[STRING]) Drug labels represented by this timestamped class-label set; multiple labels indicate duplicate raw records collapsed into the same temporal hyperedge (e.g., [(0002-1200)]).",
+    "original_timestamp": "(INT) Raw first-marketed timestamp from the Cornell source file, before shifting the temporal origin (e.g., 63474192000000).",
+    "time": "(INT) Normalized first-marketed timestamp, equal to original_timestamp minus the minimum raw timestamp in the dataset (e.g., 3547497600000).",
+    "weight": "(INT) Number of raw drug records collapsed into this timestamped hyperedge (e.g., 1)."
   }
 }

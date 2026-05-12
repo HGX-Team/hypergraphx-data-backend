@@ -61,7 +61,6 @@ def load_datasets():
         # Ensure we're only looking at directories
         if os.path.isdir(dir_path):
             json_file = os.path.join(dir_path, f"config_{directory}.json")
-            print(json_file)
             # Check if the expected .json file exists in the directory
             if os.path.isfile(json_file):
                 with open(json_file, 'r') as f:
@@ -696,7 +695,6 @@ def generate_pages():
     # Load datasets
     datasets = load_datasets()
     print(f"Found {len(datasets)} datasets.")
-    print([dataset['name'] for dataset in datasets])
 
     only_datasets_env = os.getenv("ONLY_DATASETS", "").strip()
     if only_datasets_env:

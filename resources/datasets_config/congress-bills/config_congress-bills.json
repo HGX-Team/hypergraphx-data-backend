@@ -30,8 +30,8 @@
     "name": "(STRING) Legislator name with state and district (e.g., Dayton, Mark [MN])."
   },
   "edges_metadata": {
-    "original_timestamp": "(INT) Bill original time (e.g., 720261).",
-    "time": "(INT) Bill time (e.g., 615).",
-    "weight": "(INT) Bill weight (e.g., 6)."
+    "original_timestamp": "(INT) Raw bill-introduction timestamp from the Cornell source file, measured in days (e.g., 720261).",
+    "time": "(INT) Normalized bill-introduction timestamp, equal to original_timestamp minus the minimum raw timestamp in the dataset (e.g., 615).",
+    "weight": "(INT) Number of bills collapsed into this sponsor/cosponsor set at the same introduction time (e.g., 6)."
   }
 }
