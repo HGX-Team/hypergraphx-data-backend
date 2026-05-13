@@ -35,7 +35,7 @@ MANIFEST
 /data/
 
 # Local agent/editor state
-/.claude/
+IDEAS.MD
 .DS_Store
 
 # Legacy heavy stats artifacts. Keep chart-ready

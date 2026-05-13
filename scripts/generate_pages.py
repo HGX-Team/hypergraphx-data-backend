@@ -19,6 +19,7 @@ INDEX_TEMPLATE = REPO_ROOT / 'templates' / 'index_template.html'
 INDEX_FILE = DIST_DIR / 'index.html'
 DATASET_TEMPLATE = REPO_ROOT / 'templates' / 'dataset_template.html'
 RELATED_DATA_FILE = DIST_DIR / 'static' / 'js' / 'related-data.js'
+CATALOG_FILE = DIST_DIR / 'catalog.json'
 RECENT_LIMIT = 5
 RECENT_DAYS = 90
 REPRODUCIBILITY_DIR = REPO_ROOT / 'reproducibility'
@@ -526,6 +527,26 @@ def generate_related_data(datasets):
     with open(RELATED_DATA_FILE, 'w') as related_file:
         related_file.write(js_payload)
 
+
+def generate_catalog(datasets):
+    catalog_items = []
+    for dataset in datasets:
+        item = {
+            key: value
+            for key, value in dataset.items()
+            if not key.startswith("_")
+        }
+        item["directory"] = dataset["filename"]
+        catalog_items.append(item)
+
+    catalog = {
+        "schema_version": 1,
+        "datasets": catalog_items,
+    }
+    with open(CATALOG_FILE, "w", encoding="utf-8") as catalog_file:
+        json.dump(catalog, catalog_file, ensure_ascii=True, indent=2)
+        catalog_file.write("\n")
+
 def generate_recently_added_section(entries):
     if not entries:
         return '<div class="text-muted text-center">No recent datasets yet.</div>'
@@ -733,6 +754,7 @@ def generate_pages():
         index_file.write(updated_index_content)
 
     generate_related_data(datasets)
+    generate_catalog(datasets)
 
     # Create output directory if it doesn't exist
     if not OUTPUT_DIR.exists():
