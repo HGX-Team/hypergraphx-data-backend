@@ -5,7 +5,7 @@
     "Biology",
     "Games"
   ],
-  "description": "Dual of the move learnset dataset. Nodes are moves and each hyperedge represents one Pokémon, containing the moves that Pokémon can learn in at least one version group by at least one learn method.",
+  "description": "Dual of the move learnset dataset. Nodes are moves and each hyperedge represents one Pokémon, containing the moves that Pokémon can learn in at least one version group by at least one learn method. Pokémon with the same move set are collapsed into one hyperedge; list-valued edge metadata records all represented Pokémon.",
   "created_at": "2026-05-07",
   "updated_at": "2026-05-07",
   "source": "https://pokeapi.co/",

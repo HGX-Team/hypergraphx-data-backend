@@ -6,7 +6,7 @@
     "Games",
     "Geography"
   ],
-  "description": "Nodes are PokéAPI Pokémon entries and hyperedges are location areas. A hyperedge contains all Pokémon that can be encountered in that location area in at least one game version and by at least one encounter method.",
+  "description": "Nodes are PokéAPI Pokémon entries and hyperedges are location areas. A hyperedge contains all Pokémon that can be encountered in that location area in at least one game version and by at least one encounter method. Location areas with the same Pokémon set are collapsed into one hyperedge; list-valued edge metadata records all represented location areas.",
   "created_at": "2026-05-07",
   "updated_at": "2026-05-07",
   "source": "https://pokeapi.co/",

@@ -5,7 +5,7 @@
     "Biology",
     "Games"
   ],
-  "description": "Nodes are PokéAPI Pokémon entries and hyperedges are moves. A hyperedge contains all Pokémon that can learn the move in at least one version group by at least one learn method.",
+  "description": "Nodes are PokéAPI Pokémon entries and hyperedges are moves. A hyperedge contains all Pokémon that can learn the move in at least one version group by at least one learn method. Moves with the same Pokémon set are collapsed into one hyperedge; list-valued edge metadata records all represented moves.",
   "created_at": "2026-05-07",
   "updated_at": "2026-05-07",
   "source": "https://pokeapi.co/",

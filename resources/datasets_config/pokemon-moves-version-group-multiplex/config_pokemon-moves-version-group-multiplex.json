@@ -5,7 +5,7 @@
     "Biology",
     "Games"
   ],
-  "description": "Multiplex move learnset hypergraph with PokéAPI Pokémon entries as nodes and game version groups as layers. In each layer, a hyperedge corresponds to one move and contains the Pokémon that can learn it in that version group.",
+  "description": "Multiplex move learnset hypergraph with PokéAPI Pokémon entries as nodes and game version groups as layers. In each layer, a hyperedge corresponds to one move and contains the Pokémon that can learn it in that version group. Moves with the same Pokémon set in the same layer are collapsed into one hyperedge; list-valued edge metadata records all represented moves.",
   "created_at": "2026-05-07",
   "updated_at": "2026-05-07",
   "source": "https://pokeapi.co/",

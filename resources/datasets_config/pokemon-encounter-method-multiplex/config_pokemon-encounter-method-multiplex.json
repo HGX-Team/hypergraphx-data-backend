@@ -6,7 +6,7 @@
     "Games",
     "Geography"
   ],
-  "description": "Multiplex encounter hypergraph with PokéAPI Pokémon entries as nodes and encounter methods as layers. In each layer, a hyperedge corresponds to one location area and contains the Pokémon encounterable there by that method across available game versions.",
+  "description": "Multiplex encounter hypergraph with PokéAPI Pokémon entries as nodes and encounter methods as layers. In each layer, a hyperedge corresponds to one location area and contains the Pokémon encounterable there by that method across available game versions. Location areas with the same Pokémon set in the same layer are collapsed into one hyperedge; list-valued edge metadata records all represented location areas.",
   "created_at": "2026-05-07",
   "updated_at": "2026-05-07",
   "source": "https://pokeapi.co/",

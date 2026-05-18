@@ -6,7 +6,7 @@
     "Games",
     "Geography"
   ],
-  "description": "Dual of the location encounter dataset. Nodes are PokéAPI location areas and each hyperedge represents one Pokémon, containing the location areas where that Pokémon can be encountered in at least one game version.",
+  "description": "Dual of the location encounter dataset. Nodes are PokéAPI location areas and each hyperedge represents one Pokémon, containing the location areas where that Pokémon can be encountered in at least one game version. Pokémon with the same location-area set are collapsed into one hyperedge; list-valued edge metadata records all represented Pokémon.",
   "created_at": "2026-05-07",
   "updated_at": "2026-05-07",
   "source": "https://pokeapi.co/",

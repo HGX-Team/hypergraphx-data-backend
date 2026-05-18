@@ -5,7 +5,7 @@
     "Biology",
     "Games"
   ],
-  "description": "Multiplex move learnset hypergraph with PokéAPI Pokémon entries as nodes and the four main learn methods as layers: level-up, machine, egg, and tutor. In each layer, a hyperedge corresponds to one move and contains the Pokémon that can learn it by that method.",
+  "description": "Multiplex move learnset hypergraph with PokéAPI Pokémon entries as nodes and the four main learn methods as layers: level-up, machine, egg, and tutor. In each layer, a hyperedge corresponds to one move and contains the Pokémon that can learn it by that method. Moves with the same Pokémon set in the same layer are collapsed into one hyperedge; list-valued edge metadata records all represented moves.",
   "created_at": "2026-05-07",
   "updated_at": "2026-05-07",
   "source": "https://pokeapi.co/",
