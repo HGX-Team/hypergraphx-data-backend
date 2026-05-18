@@ -51,6 +51,28 @@ Notes:
 - Set `SITE_DIST_DIR` to change the output directory (default: `dist/`).
 - When building into a Pages repo, the build also ensures a minimal `DIST_DIR/.gitignore` (currently ignores `.DS_Store`).
 
+## Download-link checks
+Before publishing, check that all configured dataset download URLs are reachable
+without downloading or loading the dataset files:
+
+```bash
+python3 scripts/maintenance/check_dataset_downloads.py --insecure
+```
+
+The default checks all datasets. `--insecure` is currently needed for the
+dataset host certificate chain. Useful variants:
+
+```bash
+# Check only selected datasets
+python3 scripts/maintenance/check_dataset_downloads.py --only pokemon-moves zoo --insecure
+
+# Print every checked URL and result
+python3 scripts/maintenance/check_dataset_downloads.py --verbose --insecure
+
+# Check every configured version entry
+python3 scripts/maintenance/check_dataset_downloads.py --all-versions --insecure
+```
+
 ## Publishing
 This backend repository publishes the generated site to the public GitHub Pages repository `HGX-Team/hypergraphx-data`.
 The Pages repository is generated output, while this backend repository is the
