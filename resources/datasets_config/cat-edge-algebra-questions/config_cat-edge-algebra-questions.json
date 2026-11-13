@@ -31,5 +31,8 @@
   "nodes_metadata": {},
   "edges_metadata": {
     "label": "(STRING) MathOverflow question tag/topic (e.g., lie-algebras)."
-  }
+  },
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_note": "Derived from user-contributed content on the Stack Exchange network. The Stack Exchange data dump is distributed under CC BY-SA 4.0; individual posts are licensed CC BY-SA 2.5, 3.0, or 4.0 depending on when they were contributed (see https://stackoverflow.com/help/licensing). Attribution is required."
 }

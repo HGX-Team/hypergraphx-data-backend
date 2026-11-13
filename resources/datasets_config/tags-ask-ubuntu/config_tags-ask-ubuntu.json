@@ -32,5 +32,8 @@
     "label": "(LIST[STRING]) Question identifier associated with the tag-set hyperedge (e.g., [1]).",
     "original_timestamp": "(INT) Original question timestamp (e.g., 48942985907).",
     "time": "(INT) Question timestamp used by the temporal hypergraph; in the JSON it matches original_timestamp (e.g., 48942985907)."
-  }
+  },
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_note": "Derived from user-contributed content on the Stack Exchange network. The Stack Exchange data dump is distributed under CC BY-SA 4.0; individual posts are licensed CC BY-SA 2.5, 3.0, or 4.0 depending on when they were contributed (see https://stackoverflow.com/help/licensing). Attribution is required."
 }

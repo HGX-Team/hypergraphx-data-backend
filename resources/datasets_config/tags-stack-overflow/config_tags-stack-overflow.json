@@ -32,5 +32,8 @@
     "original_timestamp": "(INT) Original question timestamp (e.g., 0).",
     "time": "(INT) Normalized question timestamp used by the temporal hypergraph (e.g., 0).",
     "weight": "(INT) Number of questions collapsed into this tag-set/time hyperedge (e.g., 1)."
-  }
+  },
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_note": "Derived from user-contributed content on the Stack Exchange network. The Stack Exchange data dump is distributed under CC BY-SA 4.0; individual posts are licensed CC BY-SA 2.5, 3.0, or 4.0 depending on when they were contributed (see https://stackoverflow.com/help/licensing). Attribution is required."
 }

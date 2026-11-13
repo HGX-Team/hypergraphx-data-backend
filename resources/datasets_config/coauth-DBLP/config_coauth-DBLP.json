@@ -34,5 +34,8 @@
     "original_timestamp": "(INT) Original publication year (e.g., 1974).",
     "time": "(INT) Normalized publication year used by the temporal hypergraph (e.g., 38).",
     "weight": "(INT) Number of publications collapsed into this author-set/year hyperedge (e.g., 5)."
-  }
+  },
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "license_note": "Derived from the dblp computer science bibliography. dblp data is released by Schloss Dagstuhl under the CC0 1.0 Public Domain Dedication (see https://dblp.org/xml/README.txt)."
 }

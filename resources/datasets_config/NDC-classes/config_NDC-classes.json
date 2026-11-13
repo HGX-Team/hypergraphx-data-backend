@@ -35,5 +35,8 @@
     "original_timestamp": "(INT) Raw first-marketed timestamp from the Cornell source file, before shifting the temporal origin (e.g., 63474192000000).",
     "time": "(INT) Normalized first-marketed timestamp, equal to original_timestamp minus the minimum raw timestamp in the dataset (e.g., 3547497600000).",
     "weight": "(INT) Number of raw drug records collapsed into this timestamped hyperedge (e.g., 1)."
-  }
+  },
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "license_note": "Derived from the U.S. FDA National Drug Code (NDC) Directory. FDA states that data published through openFDA is public domain under CC0 1.0 unless otherwise noted (https://open.fda.gov/license/)."
 }
