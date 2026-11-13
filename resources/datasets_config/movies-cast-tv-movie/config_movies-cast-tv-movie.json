@@ -10,6 +10,7 @@
   "created_at": "2026-05-12",
   "updated_at": "2026-05-12",
   "source": "https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset",
+  "reproducibility_link": "https://github.com/HGX-Team/hypergraphx-data/tree/main/reproducibility/movies-cast-by-genre",
   "versions": [
     {
       "version": "1.0.0",
