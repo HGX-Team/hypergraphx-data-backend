@@ -12,7 +12,7 @@ the build/deploy scripts that publish the generated GitHub Pages website.
 - `dist/`: local generated site output (ignored by git).
 - `templates/`: HTML templates used to build the site.
 - `static/`: source static assets used by the site (CSS, JS, images, figures).
-- `scripts/`: build helpers for site generation.
+- `scripts/`: build helpers for site generation, plus dataset versioning (`release_dataset.py`, `upload_datasets.sh`; see `HOWTO.md`, "Dataset versions").
 - `scripts/maintenance/`: optional local maintenance, audit, download, compression, and verification tools.
 - `data/`: local raw datasets (ignored; may be a symlink to a remote server mount).
 
@@ -82,6 +82,13 @@ python3 scripts/maintenance/check_dataset_downloads.py --all-versions
 The dataset host's TLS certificate verifies normally. If the check fails with
 certificate errors, `--insecure` disables verification as a temporary workaround,
 but the same errors will also affect users downloading from the site.
+
+## Dataset versions
+Datasets are versioned (`MAJOR.MINOR.PATCH`). Each release lives in its own
+immutable folder on the download server, and the plain `<name>/<name>.*.gz` path
+always serves the latest release. Use `scripts/release_dataset.py` to freeze,
+release, and verify versions, and `scripts/upload_datasets.sh` to upload. See
+`HOWTO.md`, "Dataset versions", for the full workflow.
 
 ## Publishing
 This backend repository publishes the generated site to the public GitHub Pages repository `HGX-Team/hypergraphx-data`.

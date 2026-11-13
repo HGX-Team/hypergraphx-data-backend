@@ -5,12 +5,15 @@ Update config_{dirname}.json files under a root directory to include dataset URL
 For each immediate subdirectory of ROOT:
   - Expect a file: subdir/config_{subdir.name}.json
   - Read its "name" attribute.
-  - Ensure a canonical versions[0] entry exists with:
-      json_download   "https://cricca.disi.unitn.it/datasets/hypergraphx-data/{name}/{name}.json.gz"
-      binary_download "https://cricca.disi.unitn.it/datasets/hypergraphx-data/{name}/{name}.hgx.gz"
+  - Ensure a "versions" list exists (newest first, MAJOR.MINOR.PATCH labels).
+  - Set every entry's download URLs from its version label:
+      {BASE_URL}/{name}/{version}/{name}.json.gz and .hgx.gz
+    except the newest entry while "versioned_downloads" is off in
+    site_config.json: it keeps the latest alias path
+      {BASE_URL}/{name}/{name}.json.gz and .hgx.gz
 
 Usage:
-    python update_configs.py /path/to/root
+    python scripts/populate_with_links.py resources/datasets_config
 """
 
 from __future__ import annotations
@@ -19,7 +22,13 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List
 
-BASE = "https://cricca.disi.unitn.it/datasets/hypergraphx-data"
+from dataset_versions import (
+    DEFAULT_SITE_CONFIG,
+    latest_url,
+    parse_version,
+    version_url,
+    versioned_downloads_enabled,
+)
 
 def clean_list(value: Any) -> List[str]:
     """Return a clean list of non-empty strings from value (list or scalar)."""
@@ -65,10 +74,21 @@ def ensure_url(lst: List[str], url: str) -> List[str]:
         lst.append(url)
     return lst
 
-def process_config_file(cfg_path: Path) -> bool:
+def check_version_order(versions: List[Dict[str, Any]]) -> None:
+    """Raise ValueError unless labels are valid and strictly newest-first."""
+    parsed = [parse_version(entry["version"]) for entry in versions]
+    for newer, older in zip(parsed, parsed[1:]):
+        if newer <= older:
+            raise ValueError(
+                "versions must be listed newest first without duplicates, got "
+                + ", ".join(entry["version"] for entry in versions)
+            )
+
+def process_config_file(cfg_path: Path, versioned: bool = False) -> bool:
     """
     Update a single config JSON file.
     Returns True if the file was updated, False if unchanged.
+    Raises ValueError if the version labels are invalid or out of order.
     """
     try:
         data = json.loads(cfg_path.read_text(encoding="utf-8"))
@@ -81,19 +101,23 @@ def process_config_file(cfg_path: Path) -> bool:
     if not isinstance(name, str) or not name.strip():
         name = cfg_path.parent.name
 
-    json_url   = f"{BASE}/{name}/{name}.json.gz"
-    binary_url = f"{BASE}/{name}/{name}.hgx.gz"
-
     original = json.dumps(data, sort_keys=True)
 
     versions = normalize_versions(data)
     if not versions:
         versions = [{"version": "1.0.0"}]
+    for entry in versions:
+        entry.setdefault("version", "1.0.0")
+    check_version_order(versions)
 
-    latest = versions[0]
-    latest.setdefault("version", "1.0.0")
-    latest["json_download"] = json_url
-    latest["binary_download"] = binary_url
+    for index, entry in enumerate(versions):
+        if index == 0 and not versioned:
+            # Latest release served from the moving alias path.
+            entry["json_download"] = latest_url(name, "json")
+            entry["binary_download"] = latest_url(name, "binary")
+        else:
+            entry["json_download"] = version_url(name, entry["version"], "json")
+            entry["binary_download"] = version_url(name, entry["version"], "binary")
     data["versions"] = versions
     for legacy_key in (
         "json_download",
@@ -115,15 +139,23 @@ def process_config_file(cfg_path: Path) -> bool:
 def main():
     ap = argparse.ArgumentParser(description="Update config_{dirname}.json files with dataset URLs.")
     ap.add_argument("root", type=Path, help="Path to the root directory containing subdirectories.")
+    ap.add_argument(
+        "--site-config",
+        type=Path,
+        default=DEFAULT_SITE_CONFIG,
+        help="site_config.json to read the versioned_downloads switch from.",
+    )
     args = ap.parse_args()
 
     root: Path = args.root
     if not root.exists() or not root.is_dir():
         raise SystemExit(f"Root path does not exist or is not a directory: {root}")
 
+    versioned = versioned_downloads_enabled(args.site_config)
     processed = 0
     updated = 0
     skipped_missing = 0
+    errors: List[str] = []
 
     for sub in root.iterdir():
         if not sub.is_dir():
@@ -137,7 +169,11 @@ def main():
             continue
 
         processed += 1
-        changed = process_config_file(cfg_path)
+        try:
+            changed = process_config_file(cfg_path, versioned=versioned)
+        except ValueError as e:
+            errors.append(f"{cfg_path}: {e}")
+            continue
         if changed:
             print(f"[OK] Updated: {cfg_path}")
             updated += 1
@@ -149,6 +185,13 @@ def main():
     print(f"Processed configs: {processed}")
     print(f"Updated configs:   {updated}")
     print(f"Missing configs:   {skipped_missing}")
+    print(f"Latest version links to: {'its version folder' if versioned else 'the latest alias path'}")
+
+    if errors:
+        print("\nInvalid version lists:")
+        for error in errors:
+            print(f"  [ERROR] {error}")
+        raise SystemExit(1)
 
 if __name__ == "__main__":
     main()

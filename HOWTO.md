@@ -56,3 +56,72 @@ python scripts/regenerate_hgx_from_json.py --data-dir data --only zoo DAWN
 # Smoke test on the first 5 datasets
 python scripts/regenerate_hgx_from_json.py --data-dir data --limit 5
 ```
+
+## Dataset versions
+
+Every dataset has a `versions` list in its config, newest first. Each entry
+records the version label, release date, changelog, download URLs, file sizes,
+and SHA-256 checksums of the compressed files.
+
+On the download server (mirrored from the local `data/` directory):
+
+```text
+<name>/<name>.hgx.gz             latest release (moving alias, used by existing links
+<name>/<name>.json.gz            and by hypergraphx's load_hypergraph_from_server)
+<name>/<version>/<name>.hgx.gz   one folder per released version, never modified
+<name>/<version>/<name>.json.gz
+```
+
+Version numbers are `MAJOR.MINOR.PATCH`:
+
+- `MAJOR`: the hypergraph changes (nodes or edges added/removed, different construction rule).
+- `MINOR`: metadata added or changed; same hypergraph.
+- `PATCH`: same content re-serialized, e.g. `.hgx` regenerated for a new HypergraphX format.
+
+### Freeze the current files (once per dataset)
+
+Before a dataset's files are ever replaced, archive the current release into
+its version folder and record its checksums:
+
+```bash
+python3 scripts/release_dataset.py freeze --all --dry-run   # preview
+python3 scripts/release_dataset.py freeze --all
+```
+
+`freeze` is safe to re-run; it refuses to continue if a recorded checksum no
+longer matches the files.
+
+### Release a new version
+
+```bash
+python3 scripts/release_dataset.py release zoo 1.1.0 \
+    --changes "Added node metadata" \
+    --hgx path/to/new/zoo.hgx.gz --json path/to/new/zoo.json.gz
+```
+
+This copies the new files into `data/zoo/1.1.0/`, replaces the latest files,
+adds the version entry at the top of the config, and sets `updated_at` (so the
+site shows the `Updated` label). Without `--hgx`/`--json` it releases the files
+already placed at the latest paths. It refuses if the previous version is not
+frozen, the version number is not greater than the current one, or the files
+are unchanged.
+
+### Verify and upload
+
+```bash
+python3 scripts/release_dataset.py check            # local files vs recorded checksums
+REMOTE_HOST=user@cricca.disi.unitn.it scripts/upload_datasets.sh --dry-run
+REMOTE_HOST=user@cricca.disi.unitn.it scripts/upload_datasets.sh
+python3 scripts/release_dataset.py check --remote   # server files vs recorded checksums
+```
+
+`upload_datasets.sh` runs the local check first, then uploads without ever
+overwriting or deleting anything in a version folder on the server. Commit the
+config changes and deploy the site afterwards.
+
+### Linking the latest version to its folder
+
+While `versioned_downloads` is `false` in `site_config.json`, the newest version
+links to the latest alias path and older versions link to their folders. Once
+every dataset is frozen and uploaded (`check --remote` passes), set it to `true`
+so every version, including the newest, links to its own permanent folder.
