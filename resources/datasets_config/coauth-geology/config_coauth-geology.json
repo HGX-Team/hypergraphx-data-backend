@@ -35,5 +35,8 @@
     "paper_title": "(LIST[STRING]) Publication title or titles represented by the hyperedge (e.g., [Analytical formulae for traverse drainage of sloping lands with constant rainfall]).",
     "time": "(INT) Normalized publication year used by the temporal hypergraph (e.g., 187).",
     "weight": "(INT) Number of publications collapsed into this author-set/year hyperedge (e.g., 1)."
-  }
+  },
+  "license": "ODC-BY",
+  "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+  "license_note": "Derived from the Microsoft Academic Graph (MAG). The MAG data is distributed by Microsoft under the Open Data Commons Attribution License (ODC-BY 1.0); see the archived MAG snapshot at https://doi.org/10.5281/zenodo.6511057. Attribution is required."
 }
