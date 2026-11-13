@@ -2,10 +2,10 @@
 - Load the dataset in a hypergraphx object, keeping all the available metadata
 - Dump the hypergraphx object with save_hypergraph both in json and hgx format
 - Create `resources/datasets_config/<dataset>/config_<dataset>.json` with the dataset metadata and download links
-- Generate the detail-page chart distributions from the local dataset file:
+- Generate the detail-page chart distributions from the local dataset file, using a Python environment with `hypergraphx` installed (e.g. the `data-hgx` Conda environment from `environment.yml`):
 
 ```bash
-/Users/francesco/hgx-dev/hgx-installation/bin/python scripts/generate_dataset_distributions.py <dataset> --overwrite
+python scripts/generate_dataset_distributions.py <dataset> --overwrite
 ```
 
 - This writes `resources/datasets_statistics/<dataset>/distributions.json`
@@ -13,6 +13,7 @@
 - Add `created_at` and `updated_at` dates in `YYYY-MM-DD` format to the dataset config. The website automatically shows `New` when `created_at` is recent, and `Updated` when only `updated_at` is recent.
 - Push the changes
 - In `reproducibility/<dataset>/` keep the self-contained script that rebuilds the dataset from the original source
+- If several datasets share one reproducibility folder (e.g. `reproducibility/movies-cast-by-genre/`), set `reproducibility_link` in each dataset config to that folder's GitHub URL; otherwise the page links to `reproducibility/<dataset>/`, which would not exist
 
 ## Recent dataset labels
 

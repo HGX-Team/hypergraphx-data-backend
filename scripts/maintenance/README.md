@@ -14,15 +14,17 @@ raw-data extraction, and load verification.
 Run the download-link check from the repository root:
 
 ```bash
-python3 scripts/maintenance/check_dataset_downloads.py --insecure
+python3 scripts/maintenance/check_dataset_downloads.py
 ```
 
 Useful variants:
 
 ```bash
-python3 scripts/maintenance/check_dataset_downloads.py --only pokemon-moves zoo --insecure
-python3 scripts/maintenance/check_dataset_downloads.py --verbose --insecure
-python3 scripts/maintenance/check_dataset_downloads.py --all-versions --insecure
+python3 scripts/maintenance/check_dataset_downloads.py --only pokemon-moves zoo
+python3 scripts/maintenance/check_dataset_downloads.py --verbose
+python3 scripts/maintenance/check_dataset_downloads.py --all-versions
 ```
+
+Add `--insecure` only if the dataset host's TLS certificate stops verifying.
 
 Keep the top-level `scripts/` directory focused on the build/deploy path.

@@ -17,10 +17,17 @@ the build/deploy scripts that publish the generated GitHub Pages website.
 - `data/`: local raw datasets (ignored; may be a symlink to a remote server mount).
 
 ## Deployment / build steps
-Prereqs: Python 3.12 and dependencies from `environment.yml` (Conda recommended).
-The Conda environment includes the full build toolchain, including `hypergraphx`
-and `matplotlib`. `requirements.txt` is a lighter pip dependency list and does
-not include every dependency needed by the dataset conversion/verification tools.
+Prereqs: Python 3.12 or newer.
+
+- Building and deploying the site (`make build`, `scripts/deploy_pages.sh`) uses
+  only the Python standard library. If `matplotlib` is installed, the statistics
+  step also writes optional PDF figures to `static/figures/`; without it, the step
+  prints a warning and skips them. No published page links to these figures.
+- The dataset tools (`scripts/generate_dataset_distributions.py`,
+  `scripts/regenerate_hgx_from_json.py`, `scripts/maintenance/verify_local_dataset_loads.py`)
+  need `hypergraphx`. Use the `data-hgx` Conda environment from `environment.yml`,
+  which pins `hypergraphx` and the scientific stack. `requirements.txt` is a
+  lighter pip list and does not include `hypergraphx`.
 
 From the repo root:
 
@@ -56,22 +63,25 @@ Before publishing, check that all configured dataset download URLs are reachable
 without downloading or loading the dataset files:
 
 ```bash
-python3 scripts/maintenance/check_dataset_downloads.py --insecure
+python3 scripts/maintenance/check_dataset_downloads.py
 ```
 
-The default checks all datasets. `--insecure` is currently needed for the
-dataset host certificate chain. Useful variants:
+The default checks all datasets. Useful variants:
 
 ```bash
 # Check only selected datasets
-python3 scripts/maintenance/check_dataset_downloads.py --only pokemon-moves zoo --insecure
+python3 scripts/maintenance/check_dataset_downloads.py --only pokemon-moves zoo
 
 # Print every checked URL and result
-python3 scripts/maintenance/check_dataset_downloads.py --verbose --insecure
+python3 scripts/maintenance/check_dataset_downloads.py --verbose
 
 # Check every configured version entry
-python3 scripts/maintenance/check_dataset_downloads.py --all-versions --insecure
+python3 scripts/maintenance/check_dataset_downloads.py --all-versions
 ```
+
+The dataset host's TLS certificate verifies normally. If the check fails with
+certificate errors, `--insecure` disables verification as a temporary workaround,
+but the same errors will also affect users downloading from the site.
 
 ## Publishing
 This backend repository publishes the generated site to the public GitHub Pages repository `HGX-Team/hypergraphx-data`.
